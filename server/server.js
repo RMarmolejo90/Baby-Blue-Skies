@@ -2,13 +2,31 @@ const express = require('express');
 const app = express();
 
 // Config
-const port = 3000
+app.use(express.json());
+app.use(cors({
+    origin: true,
+    credentials: true,
+}));
+app.use(cookieParser());
 
+// load env variables
+if (process.env.NODE_ENV != "production"){
+    require("dotenv").config();
+}
 // Import Dependencies
+const cors = require('cors');
 
-// Create
+// Connect to database
+
+// Create email (write to database)
+
+// Read (check for duplicate emails in the database)
 
 // Delete (unsubscribe)
 
-app.listen(port, () => { console.log('Server is running on port 3000')});
-
+// Start Server
+try {
+    app.listen(process.env.PORT);
+} catch(err) {
+    console.error(error);
+}
