@@ -10,7 +10,7 @@ const emailSchema = new Schema({
       }
 });
 
-const emailSubscription = mongoose.model('email', emailSchema);
+const email = mongoose.model('email', emailSchema);
 
-module.exports = emailSubscription;
+module.exports = email;
 

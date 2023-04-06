@@ -21,7 +21,7 @@ const connectToDb = require('./connectToDb');
 connectToDb();
 
 // Create email (write to database)
-
+app.post('/signup', );
 // Read (check for duplicate emails in the database)
 
 // Delete (unsubscribe)
