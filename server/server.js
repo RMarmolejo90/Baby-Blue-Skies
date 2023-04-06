@@ -15,8 +15,10 @@ if (process.env.NODE_ENV != "production"){
 }
 // Import Dependencies
 const cors = require('cors');
+const connectToDb = require('./connectToDb');
 
 // Connect to database
+connectToDb();
 
 // Create email (write to database)
 
