@@ -3,8 +3,8 @@ import React from 'react'
 export default function Footer() {
   return (
     <div>
-        sitemap
-        contact info
+        {/* sitemap
+        contact info */}
     </div>
   )
 }
