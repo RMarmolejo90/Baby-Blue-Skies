@@ -4,7 +4,6 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const connectToDb = require('./connectToDb');
-const email = require('./models/emails');
 const emailController = require('./controllers/emailController');
 
 // Config
