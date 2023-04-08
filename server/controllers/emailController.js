@@ -1,14 +1,11 @@
 const email = require('../models/emails');
 const bodyParser = require('body-parser');
 const express = require('express');
-
 const app = express();
-
 app.use(bodyParser.json());
 
 // Subscribe (Create email)
 const subscribe = async (req, res) => {
-    // fetch email from request body
     const Email  = req.body.trim();      
     try {
         const duplicateEmail = await email.findOne(Email);

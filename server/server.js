@@ -28,13 +28,12 @@ try{
 
 
 // Create email (write to database)
-app.post('/signup', );
-// Read (check for duplicate emails in the database)
+app.post('/subscribe', emailController.subscribe );
 
 // Delete (unsubscribe)
 app.delete('/unsubscribe', emailController.unsubscribe);
-// Start Server
 
+// Start Server
 app.get('/', (req, res) => {
     res.send('Connected!')
   })
