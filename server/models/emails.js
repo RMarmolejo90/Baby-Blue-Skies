@@ -4,12 +4,12 @@ const { Schema } = mongoose;
 
 // Create Schema for emails
 const emailSchema = new Schema({
-    email: { 
-        type: String,
-        required: true,
-        match: /.+\@.+\..+/,
-        unique: true,
-      }
+    email: {
+      type: String,
+      trim: true,
+      lowercase: true,
+      unique: true,
+  }
 });
 
 const email = mongoose.model('email', emailSchema);
