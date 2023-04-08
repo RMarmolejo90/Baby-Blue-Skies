@@ -8,8 +8,9 @@ function App() {
     <div>
       <Navbar />
       <Hero />
-      <Carousel />
+      <Hook />
       <Cta />
+      <Carousel />
     </div>
   )
 }
