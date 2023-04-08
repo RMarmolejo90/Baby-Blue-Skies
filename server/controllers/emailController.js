@@ -1,11 +1,19 @@
 const email = require('../models/emails');
+const bodyParser = require('body-parser');
+const express = require('express');
+
+const app = express();
+
+app.use(bodyParser.json());
 
 // Subscribe (Create email)
-const createEmail = async (req, res) => {
+const subscribe = async (req, res) => {
     // fetch email from request body
     const newEmail = req.body.email
+    // save the newEmail to the database
+    await email.create({ email: newEmail }, (error) => { console.log(error); });
     // respond with email in json
-    await res.json({ email: newEmail });
+    await res.send(`Thank You for subscribing! ${newEmail} has been added to our emailing list`);
 }
 
 // Unsubscribe (delete email)
@@ -30,6 +38,6 @@ const unsubscribe = async (req, res) => {
 }
 
 module.exports = {
-    createEmail: createEmail,
     unsubscribe: unsubscribe,
+    subscribe: subscribe,
 }

@@ -7,7 +7,7 @@ const emailSchema = new Schema({
         type: String,
         required: true,
         match: /.+\@.+\..+/,
-        unique: true
+        unique: true,
       }
 });
 
