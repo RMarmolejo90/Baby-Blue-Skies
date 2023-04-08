@@ -6,9 +6,11 @@ app.use(bodyParser.json());
 
 // Subscribe (Create email)
 const subscribe = async (req, res) => {
-    const Email  = req.body.trim();      
+    let mail  = req.body;  
+    console.log(typeof mail); 
+    mail.trim();   
     try {
-        const duplicateEmail = await email.findOne(Email);
+        const duplicateEmail = await email.findOne(mail);
         if (duplicateEmail) {
         return res.status(400).send('This email has already subscribed to our email list');
         }
