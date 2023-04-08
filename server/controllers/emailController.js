@@ -5,23 +5,25 @@ const app = express();
 app.use(bodyParser.json());
 
 // Subscribe (Create email)
+// userEmail needs to have whitespace removed immediately after the user enters an email
+// this needs to be done on the front-end, inside the event handler, with the .trim() method
+// to keep the trim as early as possible for consistent data format
 const subscribe = async (req, res) => {
-    let mail  = req.body;  
-    console.log(typeof mail); 
-    mail.trim();   
+    let { userEmail } = req.body;
     try {
-        const duplicateEmail = await email.findOne(mail);
+        const duplicateEmail = await email.findOne({ userEmail });
         if (duplicateEmail) {
-        return res.status(400).send('This email has already subscribed to our email list');
+            return res.status(400).send('This email has already subscribed to our email list');
         }
-        const newEmail = new email(Email);
+        const newEmail = new email({ email });
         await newEmail.save();
-        res.send(`Thank you for subscribing! ${newEmail} has been added to our email list`);
+        res.send(`Thank you for subscribing! ${email} has been added to our email list`);
     } catch (error) {
         console.error(error);
         res.status(500).send('Internal server error');
     }
-    };
+};
+
    
 // Unsubscribe (delete email)
 
