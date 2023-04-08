@@ -9,13 +9,21 @@ app.use(bodyParser.json());
 // Subscribe (Create email)
 const subscribe = async (req, res) => {
     // fetch email from request body
-    const newEmail = req.body.email
-    // save the newEmail to the database
-    await email.create({ email: newEmail }, (error) => { console.log(error); });
-    // respond with email in json
-    await res.send(`Thank You for subscribing! ${newEmail} has been added to our emailing list`);
-}
-
+    const Email  = req.body.trim();      
+    try {
+        const duplicateEmail = await email.findOne(Email);
+        if (duplicateEmail) {
+        return res.status(400).send('This email has already subscribed to our email list');
+        }
+        const newEmail = new email(Email);
+        await newEmail.save();
+        res.send(`Thank you for subscribing! ${newEmail} has been added to our email list`);
+    } catch (error) {
+        console.error(error);
+        res.status(500).send('Internal server error');
+    }
+    };
+   
 // Unsubscribe (delete email)
 
 const unsubscribe = async (req, res) => {
