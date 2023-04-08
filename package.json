@@ -2,10 +2,10 @@
   "name": "baby-blue-skies",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "server",
   "scripts": {
-    "dev": "nodemon server/server.js",
-    "start": "server/server.js"
+    "dev": "nodemon server.js",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",

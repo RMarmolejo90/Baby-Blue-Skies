@@ -1,5 +1,11 @@
+
+// Import Dependencies
 const express = require('express');
 const app = express();
+const cors = require('cors');
+const connectToDb = require('./connectToDb');
+const email = require('./models/emails');
+const emailController = require('./controllers/emailController');
 
 // Config
 app.use(express.json());
@@ -7,28 +13,35 @@ app.use(cors({
     origin: true,
     credentials: true,
 }));
-app.use(cookieParser());
 
 // load env variables
 if (process.env.NODE_ENV != "production"){
     require("dotenv").config();
 }
-// Import Dependencies
-const cors = require('cors');
-const connectToDb = require('./connectToDb');
 
 // Connect to database
-connectToDb();
+try{
+     connectToDb();
+} catch(err) {
+    console.error(error);
+}
+
 
 // Create email (write to database)
 app.post('/signup', );
 // Read (check for duplicate emails in the database)
 
 // Delete (unsubscribe)
-
+app.delete('/unsubscribe', emailController.unsubscribe);
 // Start Server
+
+app.get('/', (req, res) => {
+    res.send('Connected!')
+  })
+
 try {
     app.listen(process.env.PORT);
+
 } catch(err) {
     console.error(error);
 }

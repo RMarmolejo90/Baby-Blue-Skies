@@ -13,7 +13,23 @@ const createEmail = async (req, res) => {
 const unsubscribe = async (req, res) => {
     // find email in db
     const emailToDelete = req.body.email
-    // delete email
+    // Make sure the email exists in the database
+    if (email.findOne(emailToDelete)){
+        // delete email
+        try{
+            await email.findOneAndDelete(emailToDelete);
+            // respond with confirmation
+            res.json('Successfully Unsubscribed from our Emailing List');
+        } catch(err) {
+            console.log(error);
+            res.json('Oops! there was an error');
+        }
+    } else {
+        res.json("Oops, we couldn't find that email. Check the spelling, and try again.");
+    }
+}
 
-    // respond with confirmation
+module.exports = {
+    createEmail: createEmail,
+    unsubscribe: unsubscribe,
 }
