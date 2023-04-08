@@ -4,11 +4,14 @@ export default function Hook() {
   return (
     <div>
         <h4>
-            If you're tired of scrolling through social media, seeing everyone else's vacation photos, and wondering why your life isn't that glamorous, 
-            let Baby Blue Skies Travel help you plan a trip that will make your friends green with envy (and maybe even a little jealous)!
+            Do you know what's better than taking a vacation? Taking a vacation that doesn't 
+            make you want to rip your hair out. Let Baby Blue Skies Travel handle the details 
+            so you can focus on the fun stuff - like deciding what swimsuit to pack.
+            Do you know what's better than taking a vacation? Taking a vacation that doesn't make you want to rip your hair out. Let Baby Blue Skies Travel handle the 
+            details so you can focus on the fun stuff - like deciding what swimsuit to pack.        
         </h4>
         <p>
-            Hey there! Planning a vacation can be stressful, but our expert travel agents are here to make it easy and fun.
+            Planning a vacation can be stressful, but our expert travel agents are here to make it easy and fun.
             Think of us as your personal travel gurus - we've traveled far and wide and can give you insider tips and recommendations you won't find on Google.
         </p>
         <p>
