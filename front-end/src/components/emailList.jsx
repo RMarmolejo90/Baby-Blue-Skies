@@ -6,10 +6,6 @@ const axios = require('axios');
 
 const [inputEmail, setInputEmail] = useState('');
 
-const submitEmail = (e) => {
-  const email = e.target.value;
-  const formatEmail = email.toLowerCase().trim()
-}
 // yup
 const SignupForm = () => {
   const formik = useFormik({
