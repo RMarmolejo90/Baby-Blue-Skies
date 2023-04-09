@@ -6,7 +6,11 @@ const axios = require('axios');
 
 const [inputEmail, setInputEmail] = useState('');
 
-// yup
+
+
+
+export default function EmailList() {
+  // yup
 const SignupForm = () => {
   const formik = useFormik({
     initialValues: {
@@ -20,8 +24,13 @@ const SignupForm = () => {
   },
 });}
 
-
-<Formik
+  return (
+    <div>
+        {/* // form with input for email, and submit Button
+        // small unsubscribe link
+        // paragraph about signing up for emails */}
+        
+      <Formik
        initialValues={{ email: ''}}
        validate={values => {
          const errors = {};
@@ -40,15 +49,8 @@ const SignupForm = () => {
            setSubmitting(false);
          }, 400);
        }}
-     ></Formik>
-
-export default function EmailList() {
-  return (
-    <div>
-        {/* // form with input for email, and submit Button
-        // small unsubscribe link
-        // paragraph about signing up for emails */}
-        <form action="">
+      >
+      <form action="">
           <label htmlFor="email">Email Address</label>
           <input type="email" name="userEmail" id="email" 
           onChange={formik.handleChange}
@@ -59,6 +61,7 @@ export default function EmailList() {
          <div>{formik.errors.email}</div>) : null}
           <button type='submit'>Subscribe</button>
         </form>
+        </Formik>
         
     </div>
   )
