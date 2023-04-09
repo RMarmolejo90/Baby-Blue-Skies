@@ -54,7 +54,7 @@ export default function EmailList() {
         // paragraph about signing up for emails */}
         <form action="">
           <label htmlFor="email">Email Address</label>
-          <input value="email" type="email" name="userEmail" id="email" 
+          <input type="email" name="userEmail" id="email" 
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           value={formik.values.email} />
