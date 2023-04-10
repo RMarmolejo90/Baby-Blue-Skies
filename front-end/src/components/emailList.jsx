@@ -1,22 +1,20 @@
 import React from 'react';
 import { useFormik } from 'formik';
-import { emailSchema } from '../../validations/EmailValidation';
 import * as Yup from 'yup';
 
 const EmailForm = () => {
   const formik = useFormik({
     initialValues: {
       email: '',
-    },
-    validationSchema: Yup.object({
-      email: emailSchema,
+    },validationSchema: Yup.object({
+      email: Yup.string().email('Invalid email address').required('Required'),
     }),
     onSubmit: (values) => {
+      console.log(typeof formik.values);
       console.log('submitted');
       console.log(formik.values);
       alert(JSON.stringify(values, null, 2));
-    },
-  });
+    },});
 
  
   return (
