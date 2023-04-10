@@ -13,8 +13,10 @@ const EmailForm = () => {
       console.log(typeof formik.values);
       console.log('submitted');
       console.log(formik.values);
-      alert(JSON.stringify(values, null, 2));
-    },});
+      alert('Thanks for joining our email list! Your email has been successfully been added!');
+      formik.resetForm();
+    },
+  });
 
  
   return (
