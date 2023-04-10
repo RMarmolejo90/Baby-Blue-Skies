@@ -11,6 +11,7 @@ function App() {
     <div>
       <Navbar />
       <Hero />
+      <EmailForm />
       <Hook />
       <Cta />
       <Carousel />
