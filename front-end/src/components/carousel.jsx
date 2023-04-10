@@ -1,11 +1,10 @@
 import { useRef, useEffect } from 'react';
 import { register } from 'swiper/element/bundle';
 
-register();
 
-export const Carousel = () => {
+export default function Carousel() {
+  register();
   const swiperElRef = useRef(null);
-
   useEffect(() => {
     // listen for Swiper events using addEventListener
     swiperElRef.current.addEventListener('progress', (e) => {
