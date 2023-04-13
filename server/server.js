@@ -12,7 +12,6 @@ app.use(cors({
     origin: true,
     credentials: true,
 }));
-
 // load env variables
 if (process.env.NODE_ENV != "production"){
     require("dotenv").config();
@@ -27,7 +26,7 @@ try{
 
 
 // Create email (write to database)
-app.post('/subscribe', emailController.subscribe );
+app.post('/', emailController.subscribe );
 
 // Delete (unsubscribe)
 app.delete('/unsubscribe', emailController.unsubscribe);

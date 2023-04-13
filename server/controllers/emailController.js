@@ -5,9 +5,7 @@ const app = express();
 app.use(bodyParser.json());
 
 // Subscribe (Create email)
-// userEmail needs to have whitespace removed immediately after the user enters an email
-// this needs to be done on the front-end, inside the event handler, with the .trim() method
-// to keep the trim as early as possible for consistent data format
+
 const subscribe = async (req, res) => {
     const { userEmail } = req.body;
     if (!userEmail) {
