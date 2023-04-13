@@ -1,8 +1,19 @@
 import { useRef, useEffect } from 'react';
 import { register } from 'swiper/element/bundle';
+import Swiper from 'swiper';
+import 'swiper/css';
 
 
 export default function Carousel() {
+  const swiper = new Swiper('.swiper', {
+    direction: 'vertical',
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    }
+  })
+
   register();
   const swiperElRef = useRef(null);
   useEffect(() => {
