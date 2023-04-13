@@ -1,5 +1,5 @@
 import React from 'react';
-import { useFormik, Form } from 'formik';
+import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import axios from 'axios';
 
@@ -13,9 +13,16 @@ const EmailForm = () => {
     }), 
     onSubmit: async (values) => {
       console.log('Sending POST request to /');
-      const res = await axios.post('/', values);
-      console.log(res);
-      alert('Thanks for joining our email list! Your email has been successfully added!');
+      await axios.post('http://localhost:3001/', values, {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      }) .then (function (response) {
+        alert('Thanks for joining our email list! Your email has been successfully added!');
+        console.log(response)
+      }) .catch (function (error) {
+        console.log (error)
+      });
       formik.resetForm();
     }
     
