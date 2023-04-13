@@ -33,7 +33,8 @@ app.delete('/unsubscribe', emailController.unsubscribe);
 
 // Start Server
 app.get('/', (req, res) => {
-    res.send('Connected!')
+    const PORT = process.env.PORT;
+    res.send(`server on port ${PORT}`);
   })
 
 try {

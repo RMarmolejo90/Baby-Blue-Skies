@@ -5,8 +5,6 @@ const { Schema } = mongoose;
 const emailSchema = new Schema({
     email: {
       type: String,
-      trim: true,
-      lowercase: true,
       unique: true,
   }
 });

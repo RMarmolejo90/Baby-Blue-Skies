@@ -8,17 +8,18 @@ app.use(bodyParser.json());
 
 const subscribe = async (req, res) => {
     const { userEmail } = req.body;
-    if (!userEmail) {
-        return res.status(400).send('Email address is required');
-    }
+    console.log('Incoming data:', req.body);
+    // if (!userEmail) {
+    //     return res.status(400).send('Email address is required');
+    // }
     try {
         const duplicateEmail = await email.findOne({ email: userEmail });
         if (duplicateEmail) {
-            return res.status(400).send('This email has already subscribed to our email list');
-        }
+            return res.status(409).json({message:'This email is already subscribed'})
+        } else {
         const newEmail = new email({ email: userEmail });
         await newEmail.save();
-        res.send(`Thank you for subscribing! ${userEmail} has been added to our email list`);
+        res.send(`Thank you for subscribing! ${userEmail} has been added to our email list`)}
     } catch (error) {
         console.error(error);
         res.status(500).send('Internal server error');

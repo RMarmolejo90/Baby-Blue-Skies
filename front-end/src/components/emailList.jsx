@@ -13,15 +13,18 @@ const EmailForm = () => {
     }), 
     onSubmit: async (values) => {
       console.log('Sending POST request to /');
-      await axios.post('http://localhost:3001/', values, {
+      console.log('Email:', values.email);
+      const res = await axios.post('http://localhost:3001/', { userEmail: values.email }, {
         headers: {
-          'Content-Type': 'application/json',
+          'Content-Type': 'application/json'
         },
       }) .then (function (response) {
-        alert('Thanks for joining our email list! Your email has been successfully added!');
+        alert('Thank you for subscribing!')
+        console.log(values)
         console.log(response)
       }) .catch (function (error) {
         console.log (error)
+        if (error.response.status === 409){ alert('This email is already subscribed')}
       });
       formik.resetForm();
     }
