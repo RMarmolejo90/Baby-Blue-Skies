@@ -20,10 +20,13 @@ export default () => {
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log('slide change')}
     >
-      {sliderImages.map( sliderImages => (
-        <SwiperSlide key={sliderImages.id}>
-          <div>
-            {sliderImages.location}
+      {sliderImages.map( (sliderImages, index) => (
+        <SwiperSlide key={index} className='slide'>
+          <div className='slide-wrapper'>
+            <img className='slide-image' src={sliderImages.image} alt={sliderImages.location} />
+            <div>
+              <h2>{sliderImages.location}</h2>
+            </div>
           </div>
         </SwiperSlide>
       ) )}
