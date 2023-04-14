@@ -1,5 +1,5 @@
 // import Swiper core and required modules
-import { Navigation, A11y, EffectFlip } from 'swiper';
+import { Navigation, EffectFade, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import sliderImages from '../assets/sliderObjects.js';
 // Import Swiper styles
@@ -14,22 +14,24 @@ export default () => {
   return (
     <Swiper
       // install Swiper modules
-      modules={[Navigation, A11y, EffectFlip]}
+      modules={[Navigation, EffectFade, Autoplay]}
       enabled='true'
-      effect='flip'
+      autoplay={true}
+      effect='fade'
       loop='true'
+      lazyPreloadPrevNext={2}
       spaceBetween={50}
       slidesPerView={1}
-      navigation
-      autoplay      
+      navigation     
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log('slide change')}
+      className="md:max-w-3xl shadow-xl rounded-xl contrast-125 "
     >
       {sliderImages.map( (sliderImages, index) => (
-        <SwiperSlide key={index} className='slide'>
-          <div className='slide-wrapper '>
+        <SwiperSlide key={index} className='slide'  >
+          <div className='slide-wrapper'>
+            <img className='slide-image' loading="lazy" src={sliderImages.image} alt={sliderImages.location} />
             <div className="swiper-lazy-preloader"></div>
-            <img className='slide-image' loading='lazy' src={sliderImages.image} alt={sliderImages.location} />
             <div>
               <h2>{sliderImages.location}</h2>
             </div>

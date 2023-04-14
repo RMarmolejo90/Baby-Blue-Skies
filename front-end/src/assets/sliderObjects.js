@@ -1,240 +1,240 @@
 const sliderImages = [
     {  
         location:"Athens, Greece",
-        image:"../src/assets/carousel/Athens-greece.jpg"
+        image:"../src/assets/sliderImages/Athens-greece.webp"
     },
     {
         location:"Indonesia",
-        image:"../src/assets/carousel/Banten-Indonesia.jpg"
+        image:"../src/assets/sliderImages/Banten-Indonesia.webp"
     },
     {
         location:"Tanzania",
-        image:"../src/assets/carousel/Arusha-Region-Tanzania.jpg"
+        image:"../src/assets/sliderImages/Arusha-Region-Tanzania.webp"
     },
     {
         location:"Mongolia",
-        image:"../src/assets/carousel/Bayan-Ölgii-Mongolia.jpg"
+        image:"../src/assets/sliderImages/Bayan-Ölgii-Mongolia.webp"
     },
     {
         location:"Bermuda",
-        image:"../src/assets/carousel/bermuda.jpg"
+        image:"../src/assets/sliderImages/bermuda.webp"
     },
     {
         location:"Bordeaux, France",
-        image:"../src/assets/carousel/Bordeaux-France.jpg"
+        image:"../src/assets/sliderImages/Bordeaux-France.webp"
     },
     {
         location:"Buenos Aires, Argentina",
-        image:"../src/assets/carousel/Buenos-Aires-Argentina.jpg"
+        image:"../src/assets/sliderImages/Buenos-Aires-Argentina.webp"
     },
     {
         location:"Caraga, Philippines",
-        image:"../src/assets/carousel/Caraga-Philippines.jpg"
+        image:"../src/assets/sliderImages/Caraga-Philippines.webp"
     },
     {
         location:"Central Province, Maldives",
-        image:"../src/assets/carousel/Central-Province-Maldives.jpg"
+        image:"../src/assets/sliderImages/Central-Province-Maldives.webp"
     },
     {
         location:"Honduras",
-        image:"../src/assets/carousel/Coxen Hole-honduras.jpg"
+        image:"../src/assets/sliderImages/Coxen Hole-honduras.webp"
     },
     {
         location:"Cusco, Peru",
-        image:"../src/assets/carousel/Cusco-Peru-2.jpg"
+        image:"../src/assets/sliderImages/Cusco-Peru-2.webp"
     },
     {
         location: "Dubai, United Arab Emirates",
-        image:"../src/assets/carousel/Dubai-United-Arab-Emirates.jpg"
+        image:"../src/assets/sliderImages/Dubai-United-Arab-Emirates.webp"
     },
     {
         location:"Algeria",
-        image:"../src/assets/carousel/Djanet-Illizi-Province-Algeria.jpg"
+        image:"../src/assets/sliderImages/Djanet-Illizi-Province-Algeria.webp"
     },
     {
         location:"Cusco, Peru",
-        image:"../src/assets/carousel/Cusco-Peru.jpg"
+        image:"../src/assets/sliderImages/Cusco-Peru.webp"
     },
     {
         location:"Dunamaise, Ireland",
-        image:"../src/assets/carousel/Dunamaise-ireland.jpg"
+        image:"../src/assets/sliderImages/Dunamaise-ireland.webp"
     },
     {
         location:"Egypt",
-        image:"../src/assets/carousel/egypt.jpg"
+        image:"../src/assets/sliderImages/egypt.webp"
     },
     {
         location:"Etratat, France",
-        image:"../src/assets/carousel/Étretat-france.jpg"
+        image:"../src/assets/sliderImages/Étretat-france.webp"
     },
     {
         location:"French Polynesia",
-        image:"../src/assets/carousel/French-Polynesia.jpg"
+        image:"../src/assets/sliderImages/French-Polynesia.webp"
     },
     {
         location:"Germany",
-        image:"../src/assets/carousel/germany-castle.jpg"
+        image:"../src/assets/sliderImages/germany-castle.webp"
     },
     {
         location:"Gramado, Brazil",
-        image:"../src/assets/carousel/Gramado-Brazil.jpg"
+        image:"../src/assets/sliderImages/Gramado-Brazil.webp"
     },
     {
         location:"Sri Lanka",
-        image:"../src/assets/carousel/Hambantota-Sri Lanka.jpg"
+        image:"../src/assets/sliderImages/Hambantota-Sri Lanka.webp"
     },
     {
         location:"Iceland",
-        image:"../src/assets/carousel/iceland.jpg"
+        image:"../src/assets/sliderImages/iceland.webp"
     },
     {
         
         location:"India",
-        image:"../src/assets/carousel/india.jpg"
+        image:"../src/assets/sliderImages/india.webp"
     },
     {
         
         location:"Indonesia",
-        image:"../src/assets/carousel/indonesia.jpg"
+        image:"../src/assets/sliderImages/indonesia.webp"
     },
     {
         
         location:"Ireland",
-        image:"../src/assets/carousel/ireland.jpg"
+        image:"../src/assets/sliderImages/ireland.webp"
     },
     {
         
         location:"Kajiado County, Kenya",
-        image:"../src/assets/carousel/Kajiado-County-Kenya.jpg"
+        image:"../src/assets/sliderImages/Kajiado-County-Kenya.webp"
     },
     {
         location:"Dominican Republic",
-        image:"../src/assets/carousel/La-Altagracia-República-Dominicana.jpg"
+        image:"../src/assets/sliderImages/La-Altagracia-República-Dominicana.webp"
     },
     {
         location:"Limon, Costa Rica",
-        image:"../src/assets/carousel/Limón-Costa-Rica.jpg"
+        image:"../src/assets/sliderImages/Limón-Costa-Rica.webp"
     },
     {
         location:"Luang Prabang Province, Laos",
-        image:"../src/assets/carousel/Luang-Prabang-Province-Laos.jpg"
+        image:"../src/assets/sliderImages/Luang-Prabang-Province-Laos.webp"
     },
     {
         location:"Maafushi, Maldives",
-        image:"../src/assets/carousel/Maafushi-maldives.jpg"
+        image:"../src/assets/sliderImages/Maafushi-maldives.webp"
     },
     {
         location:"Maldives",
-        image:"../src/assets/carousel/maldives1.jpg"
+        image:"../src/assets/sliderImages/maldives1.webp"
     },
     {
         location:"Male, Maldives",
-        image:"../src/assets/carousel/Male-Maldives.jpg"
+        image:"../src/assets/sliderImages/Male-Maldives.webp"
     },
     {
         location:"Moraine Lake, Canada",
-        image:"../src/assets/carousel/moraine-lake-canada.jpg"
+        image:"../src/assets/sliderImages/moraine-lake-canada.webp"
     },
     {
         location:"Mount Cook, New Zealand",
-        image:"../src/assets/carousel/mount-cook-new-zealand.jpg"
+        image:"../src/assets/sliderImages/mount-cook-new-zealand.webp"
     },
     {
         location:"Mueang Kao, Thailand",
-        image:"../src/assets/carousel/Mueang Kao-thailand.jpg"
+        image:"../src/assets/sliderImages/Mueang Kao-thailand.webp"
     },
     {
         location:"Myrland Nordland, Norway",
-        image:"../src/assets/carousel/Myrland-Nordland-Norway.jpg"
+        image:"../src/assets/sliderImages/Myrland-Nordland-Norway.webp"
     },
     {
         location:"Nassau Nova Providencia, Bahamas",
-        image:"../src/assets/carousel/Nassau-Nova-Providência-Bahamas.jpg"
+        image:"../src/assets/sliderImages/Nassau-Nova-Providência-Bahamas.webp"
     },
     {
         location:"Paris, France",
-        image:"../src/assets/carousel/paris-france.jpg"
+        image:"../src/assets/sliderImages/paris-france.webp"
     },
     {
         location: "Pattaya City, Thailand",
-        image:"../src/assets/carousel/Pattaya-City-thailand.jpg"
+        image:"../src/assets/sliderImages/Pattaya-City-thailand.webp"
     },
     {
         location:"Rio De Janeiro, Brazil",
-        image:"../src/assets/carousel/rio-de-janeiro-brazil.jpg"
+        image:"../src/assets/sliderImages/rio-de-janeiro-brazil.webp"
     },
     {
         location:"Rome, Italy",
-        image:"../src/assets/carousel/Rome Colloseum.jpg"
+        image:"../src/assets/sliderImages/Rome Colloseum.webp"
     },
     {
         location:"San-Juan, Bautista",
-        image:"../src/assets/carousel/San-Juan-Bautista.jpg"
+        image:"../src/assets/sliderImages/San-Juan-Bautista.webp"
     },
     {
         location:"Santarem District, Portugal",
-        image:"../src/assets/carousel/Santarém-District-Portugal.jpg"
+        image:"../src/assets/sliderImages/Santarém-District-Portugal.webp"
     },
     {
         location:"Santorini, Greece",
-        image:"../src/assets/carousel/Santorini-Greece.jpg"
+        image:"../src/assets/sliderImages/Santorini-Greece.webp"
     },
     {
         location:"Siem Reap Province, Cambodia",
-        image:"../src/assets/carousel/Siem-Reap-Province-Cambodia.jpg"
+        image:"../src/assets/sliderImages/Siem-Reap-Province-Cambodia.webp"
     },
     {
         location:"Singapore",
-        image:"../src/assets/carousel/singapore-1.jpg"
+        image:"../src/assets/sliderImages/singapore-1.webp"
     },
 
     {
         location:"Soledad de Graciano, Mexico",
-        image:"../src/assets/carousel/Soledad-de-Graciano-Sánchez-Mexico.jpg"
+        image:"../src/assets/sliderImages/Soledad-de-Graciano-Sánchez-Mexico.webp"
     },
 
     {
         location:"Tangier, Morocco",
-        image:"../src/assets/carousel/Tangier-morocco.jpg"
+        image:"../src/assets/sliderImages/Tangier-morocco.webp"
     },
 
     {
         location:"Thailand",
-        image:"../src/assets/carousel/thailand2.jpg"
+        image:"../src/assets/sliderImages/thailand2.webp"
     },
 
     {
         location:"Singapore",
-        image:"../src/assets/carousel/singapore.jpg"
+        image:"../src/assets/sliderImages/singapore.webp"
     },
 
     {
         location:"Tokyo, Japan",
-        image:"../src/assets/carousel/tokyo-japan-1.jpg"
+        image:"../src/assets/sliderImages/tokyo-japan-1.webp"
     },
 
     {
         location:"Trentino, Italia",
-        image:"../src/assets/carousel/Trentino-Alto-Adige-Italia.jpg",
+        image:"../src/assets/sliderImages/Trentino-Alto-Adige-Italia.webp",
     },
 
     {
         location:"Venice, Italy",
-        image:"../src/assets/carousel/Venice-Veneto-Italy.jpg",
+        image:"../src/assets/sliderImages/Venice-Veneto-Italy.webp",
     },
     {
         location:"Wicklow, Ireland",
-        image:"../src/assets/carousel/Wicklow-Ireland.jpg",
+        image:"../src/assets/sliderImages/Wicklow-Ireland.webp",
     },
 
     {
         location:"Tokyo, Japan",
-        image:"../src/assets/carousel/tokyo-japan.jpg",
+        image:"../src/assets/sliderImages/tokyo-japan.webp",
     },
 
     {
         location:"Zakopane, Poland",
-        image:"../src/assets/carousel/Zakopane-poland.jpg",
+        image:"../src/assets/sliderImages/Zakopane-poland.webp",
     }
 ]
 
