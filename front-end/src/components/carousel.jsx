@@ -26,19 +26,17 @@ export default () => {
       spaceBetween={50}
       slidesPerView={1}
       navigation   
-      location={sliderImages.location}  
-      onSwiper={(swiper) => setDisplayLocation(location)}
       onSlideChange={() => console.log('slide change')}
-      className="md:max-w-4xl shadow-xl rounded-xl contrast-125 "
+      className="md:max-w-4xl shadow-2xl rounded-xl contrast-125 "
     >
       {sliderImages.map( (sliderImages, index) => (
         <SwiperSlide key={index} className='slide'  >
           <div className='slide-wrapper'>
             <img className='slide-image' loading="lazy" src={sliderImages.image} alt={sliderImages.location} />
             <div className="swiper-lazy-preloader"></div>
-            <div className=' '>
-              <h2 >{displayLocation}</h2>
-            </div>
+            {/* <div className=' relative  '>
+              <h2 >{sliderImages.location}</h2>
+            </div> */}
           </div>
         </SwiperSlide>
       ) )}
