@@ -8,7 +8,7 @@ import EmailForm from './components/emailList'
 
 function App() {
   return (
-    <div className='leading-6 text-base'>
+    <div className='leading-6 text-base text-dark-shade bg-white-shade'>
       <Navbar />
       <Hero />
       <EmailForm />

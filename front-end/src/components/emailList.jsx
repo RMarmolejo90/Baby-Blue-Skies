@@ -36,6 +36,7 @@ const EmailForm = () => {
       <form onSubmit={formik.handleSubmit}>
         <label htmlFor="email">Email Address</label>
         <input
+          className='border-2 rounded-lg'
           id="email"
           name="email"
           type="email"

@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.root,
+#root,
+#docs-root {
+    --primary-dark: #3B00DB;
+    --primary-light: #00BFFF;
+    --secondary-dark: #FDEE00;
+    --secondary-light: #F3E5AB;
+    --accent-color: ;
+    --dark-shade: #2A3439 ;
+    --light-shade: ;
+    --white-shade: #F7F7F7;
+
+}
+
+.swiper-button-next {
+    color: whitesmoke;
+    font-weight: 300;
+}
+.swiper-button-prev {
+    color: whitesmoke;
+    font-weight: 300;
+}

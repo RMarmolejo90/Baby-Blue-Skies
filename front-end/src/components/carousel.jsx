@@ -2,7 +2,6 @@
 import { Navigation, EffectFade, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import sliderImages from '../assets/sliderObjects.js';
-import { useState } from 'react';
 // Import Swiper styles
 import 'swiper/css/bundle';
 import 'swiper/css/navigation';
@@ -27,7 +26,7 @@ export default () => {
       slidesPerView={1}
       navigation   
       onSlideChange={() => console.log('slide change')}
-      className="md:max-w-4xl shadow-2xl rounded-xl contrast-125 "
+      className="md:max-w-6xl shadow-3xl rounded-xl contrast-125 "
     >
       {sliderImages.map( (sliderImages, index) => (
         <SwiperSlide key={index} className='slide'  >

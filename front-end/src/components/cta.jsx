@@ -2,10 +2,10 @@ import React from 'react'
 
 export default function Cta() {
   return (
-    <div>
+    <div className='p-8 text-center flex items-center flex-col justify-center'>
         {/* // image */}
-        <h1>Tired of staring at the same four walls?</h1>
-        <h4>
+        <h1 className='p-4 m-4' >Tired of staring at the same four walls?</h1>
+        <h4 className='p-4 m-4' >
           Let us help you plan your next big adventure! Our expert travel agents will guide you every step of the way and make sure your trip is unforgettable. 
           Don't let your wanderlust go to waste - contact us today and let's start planning your dream escape!
         </h4>
