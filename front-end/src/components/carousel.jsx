@@ -31,7 +31,7 @@ export default () => {
       {sliderImages.map( (sliderImages, index) => (
         <SwiperSlide key={index} className='slide'  >
           <div className='slide-wrapper'>
-            <img className='slide-image' loading="lazy" src={sliderImages.image} alt={sliderImages.location} />
+            <img className='swiper-image' loading="lazy" src={sliderImages.image} alt={sliderImages.location} />
             <div className="swiper-lazy-preloader"></div>
             {/* <div className=' relative  '>
               <h2 >{sliderImages.location}</h2>

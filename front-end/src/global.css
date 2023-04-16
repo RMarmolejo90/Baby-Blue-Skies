@@ -5,10 +5,10 @@
 .root,
 #root,
 #docs-root {
-    --primary-dark: #3B00DB;
-    --primary-light: #00BFFF;
-    --secondary-dark: #FDEE00;
-    --secondary-light: #F3E5AB;
+    --primary-dark: #347ce7;
+    --primary-light: #95dcf4;
+    --secondary-dark: #f2e824;
+    --secondary-light: #f5efd5d2;
     --accent-color: ;
     --dark-shade: #2A3439 ;
     --light-shade: ;
@@ -23,4 +23,9 @@
 .swiper-button-prev {
     color: whitesmoke;
     font-weight: 300;
+}
+
+.swiper-image{
+    height: 30rem;
+    overflow-y: hidden;
 }
