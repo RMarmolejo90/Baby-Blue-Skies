@@ -14,32 +14,34 @@ export default () => {
 
 
   return (
-    <Swiper
-      // install Swiper modules
-      modules={[Navigation, EffectCube, Autoplay]}
-      enabled='true'
-      autoheight='true'
-      autoplay={true}
-      effect='cube'
-      loop='true'
-      lazyPreloadPrevNext={2}
-      spaceBetween={50}
-      slidesPerView={1}
-      navigation   
-      onSlideChange={() => console.log('slide change')}
-      className="lg:max-w-2xl shadow-2xl contrast-125 "
-    >
-      {sliderImages.map( (sliderImages, index) => (
-        <SwiperSlide key={index} className='slide'  >
-          <div className='slide-wrapper'>
-            <img className='swiper-image rounded-lg lg:min-h-max' loading="lazy" src={sliderImages.image} alt={sliderImages.location} />
-            <div className="swiper-lazy-preloader"></div>
-            {/* <div className=' relative  '>
-              <h2 >{sliderImages.location}</h2>
-            </div> */}
-          </div>
-        </SwiperSlide>
-      ) )}
-    </Swiper>
+    <div className='my-20'>
+      <Swiper
+        // install Swiper modules
+        modules={[Navigation, EffectCube, Autoplay]}
+        enabled='true'
+        autoheight='true'
+        autoplay={true}
+        effect='cube'
+        loop='true'
+        lazyPreloadPrevNext={2}
+        spaceBetween={50}
+        slidesPerView={1}
+        navigation   
+        onSlideChange={() => console.log('slide change')}
+        className="lg:max-w-xl shadow-2xl contrast-125"
+      >
+        {sliderImages.map( (sliderImages, index) => (
+          <SwiperSlide key={index} className='slide'  >
+            <div className='slide-wrapper'>
+              <img className='swiper-image rounded-lg lg:min-h-max' loading="lazy" src={sliderImages.image} alt={sliderImages.location} />
+              <div className="swiper-lazy-preloader"></div>
+              {/* <div className=' relative  '>
+                <h2 >{sliderImages.location}</h2>
+              </div> */}
+            </div>
+          </SwiperSlide>
+        ) )}
+      </Swiper>
+    </div>
   );
 };
