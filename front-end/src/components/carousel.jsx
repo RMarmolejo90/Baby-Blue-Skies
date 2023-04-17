@@ -14,7 +14,7 @@ export default () => {
 
 
   return (
-    <div className='my-20'>
+    <div className='py-20 bg-primary-light'>
       <Swiper
         // install Swiper modules
         modules={[Navigation, EffectCube, Autoplay]}
