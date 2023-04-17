@@ -4,12 +4,22 @@ import App from './App'
 import './global.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Error from './pages/error'
+import Unsubscribe from './pages/unsubscribe'
+import About from './pages/about'
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
     errorElement: <Error />,
+  },
+  {
+    path: '/unsubscribe',
+    element: <Unsubscribe />,
+  },
+  {
+    path: '/about',
+    element: <About />
   }
 ])
 

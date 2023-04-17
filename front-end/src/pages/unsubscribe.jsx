@@ -2,6 +2,8 @@ import React from 'react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import axios from 'axios';
+import Navbar from '../components/navbar';
+import Footer from '../components/footer';
 
 const EmailForm = () => {
   const formik = useFormik({
@@ -14,7 +16,7 @@ const EmailForm = () => {
     onSubmit: async (values) => {
       console.log('Sending DELETE request to /unsubscribe');
       console.log('Email:', values.email);
-      const res = await axios.delete('http://localhost:3001/unsuscribe', { userEmail: values.email }, {
+      const res = await axios.delete('http://localhost:3001/unsuscribe', { emailToDelete: values.email }, {
         headers: {
           'Content-Type': 'application/json'
         },
@@ -32,21 +34,33 @@ const EmailForm = () => {
   });
 
   return (
-    <div className='flex items-center justify-center p-8'>
-      <form onSubmit={formik.handleSubmit}>
-        {/* <label htmlFor="email">Email Address:</label> */}
-        <input
-          className='border-2 rounded-lg px-4 mx-4'
-          id="emailDelete"
-          name="email"
-          type="email"
-          placeholder='enter your email'
-          onChange={formik.handleChange}
-          onBlur={formik.handleBlur}
-          value={formik.values.email}
-        />
-        <button className='py-1 px-2 m-4 tracking-side leading-6 text-sm bg-red-500 font-semibold border rounded-xl' type="submit">Submit</button>
-      </form>
+    <div>
+        <Navbar />
+            <div className='flex items-center justify-center p-8'>
+                <h3>Unsubrcribe From Emails</h3>
+                <p>We're sorry to see you go and we hope that you've enjoyed receiving our special travel deals.
+                 If you would like to unsubscribe from our emails, please fill out the form below with your email address and click the "unsubscribe" button.
+                We understand that everyone's travel preferences are unique and we hope that we were able to inspire you with our travel offers. 
+                If there's anything we could have done better or if you have any feedback, please don't hesitate to let us know! We're always looking for ways to improve our service and your input is valuable to us.
+                </p>
+                <p>If you have any questions or concerns about your future travel plans, our team is here to assist you. You can contact us using the information provided on this page and we'll be happy to help.</p>
+
+                <p>Thank you for considering us as your travel agency and we wish you all the best on your future journeys!</p>
+                <form action='unsubscribe' onSubmit={formik.handleSubmit}>
+                    <input
+                    className='border-2 rounded-lg px-4 mx-4'
+                    id="emailDelete"
+                    name="email"
+                    type="email"
+                    placeholder='enter your email'
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                    value={formik.values.email}
+                    />
+                    <button className='py-1 px-2 m-4 tracking-side leading-6 text-sm bg-red-500 font-semibold border rounded-xl' type="submit">Submit</button>
+                </form>
+            </div>
+        <Footer />
     </div>
   );
 };
