@@ -32,11 +32,11 @@ const EmailForm = () => {
   });
 
   return (
-    <div className='flex items-center justify-center p-8'>
-      <form onSubmit={formik.handleSubmit}>
+    <div className='flex flex-col items-center justify-center p-8'>
+      <form onSubmit={formik.handleSubmit} className='p-4 flex flex-col items-center justify-center'>
         {/* <label htmlFor="email">Email Address:</label> */}
         <input
-          className='border-2 rounded-lg px-4 mx-4'
+          className='border-2 rounded-lg px-4 mx-4 tracking-side leading-6'
           id="email"
           name="email"
           type="email"
@@ -45,7 +45,7 @@ const EmailForm = () => {
           onBlur={formik.handleBlur}
           value={formik.values.email}
         />
-        <button className='py-1 px-2 m-4 tracking-side leading-6 text-sm bg-green-400 font-semibold border rounded-xl' type="submit">Submit</button>
+        <button className='py-2 px-10 m-4 tracking-side leading-6 text-sm bg-green-400 font-semibold border rounded-xl' type="submit">Submit</button>
       </form>
     </div>
   );
