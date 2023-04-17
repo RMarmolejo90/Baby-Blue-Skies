@@ -7,7 +7,6 @@ import EmailForm from './components/emailList'
 import Why from './components/why'
 import Footer from './components/footer'
 
-
 function App() {
   return (
     <div className='leading-6 text-base text-dark-shade bg-white-shade'>
