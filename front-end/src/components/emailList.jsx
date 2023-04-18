@@ -45,7 +45,7 @@ const EmailForm = () => {
       <p className='px-4 py-6'>
       Join our community of travelers and start planning your next adventure today!
       </p>
-      <div className='border rounded-xl px-6 py-4 shadow-inner bg-primary-dark'>
+      <div className='border border-white-shade rounded-xl px-6 py-4 shadow-inner-xl shadow-md bg-primary-dark'>
         <form onSubmit={formik.handleSubmit} className='p-4 flex flex-col items-center justify-center'>
           {/* <label htmlFor="email">Email Address:</label> */}
           <input
