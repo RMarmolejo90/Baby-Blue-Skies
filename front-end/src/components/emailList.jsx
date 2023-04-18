@@ -45,20 +45,22 @@ const EmailForm = () => {
       <p className='px-4 py-6'>
       Join our community of travelers and start planning your next adventure today!
       </p>
-      <form onSubmit={formik.handleSubmit} className='p-4 flex flex-col items-center justify-center'>
-        {/* <label htmlFor="email">Email Address:</label> */}
-        <input
-          className='border-2 rounded-lg px-4 mx-4 tracking-side leading-6 text-center'
-          id="email"
-          name="email"
-          type="email"
-          placeholder='enter your email'
-          onChange={formik.handleChange}
-          onBlur={formik.handleBlur}
-          value={formik.values.email}
-        />
-        <button className='py-2 px-10 m-4 tracking-side leading-6 text-sm bg-green-400 font-semibold border rounded-xl' type="submit">Submit</button>
-      </form>
+      <div className='border rounded-xl px-6 py-4 shadow-inner bg-primary-dark'>
+        <form onSubmit={formik.handleSubmit} className='p-4 flex flex-col items-center justify-center'>
+          {/* <label htmlFor="email">Email Address:</label> */}
+          <input
+            className='border-2 rounded-lg px-4 mx-4 tracking-side leading-6 text-center'
+            id="email"
+            name="email"
+            type="email"
+            placeholder='enter your email'
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+            value={formik.values.email}
+          />
+          <button className='py-2 px-10 m-4 tracking-side leading-6 text-sm bg-green-400 font-semibold border rounded-xl' type="submit">Submit</button>
+        </form>
+      </div>
     </div>
   );
 };
