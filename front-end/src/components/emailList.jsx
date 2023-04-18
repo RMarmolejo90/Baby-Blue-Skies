@@ -48,7 +48,7 @@ const EmailForm = () => {
       <form onSubmit={formik.handleSubmit} className='p-4 flex flex-col items-center justify-center'>
         {/* <label htmlFor="email">Email Address:</label> */}
         <input
-          className='border-2 rounded-lg px-4 mx-4 tracking-side leading-6'
+          className='border-2 rounded-lg px-4 mx-4 tracking-side leading-6 text-center'
           id="email"
           name="email"
           type="email"

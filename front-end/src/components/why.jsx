@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Why() {
   return (
-    <div className='py-8 '>
+    <div className='py-8 lg:px-20'>
         <h2 className='p-4 text-xl text-primary-dark'>So why travel with Baby Blue Skies?</h2>
         <p className='p-4'>
             Because planning a vacation can be stressful, but Baby Blue Skies can make the entire thing, an enjoyable and easy-going experience.
