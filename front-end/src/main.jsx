@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Error from './pages/error'
 import Unsubscribe from './pages/unsubscribe'
 import About from './pages/about'
+import Contact from './pages/contact'
 
 const router = createBrowserRouter([
   {
@@ -20,7 +21,11 @@ const router = createBrowserRouter([
   {
     path: '/about',
     element: <About />
-  }
+  },
+  {
+    path: '/contact',
+    element: <Contact />
+  },
 ])
 
 
