@@ -16,11 +16,11 @@ export default function Navbar() {
   }
   return (
     <div>        
-      <div className='p-2 max-w-screen bg-dark-shade text-primary-dark flex flex-row flex-wrap justify-between items-center'>
-        <h2 className='m-2 text-2xl'>Baby Blue Skies Travel</h2>         
+      <div className='p-2 max-w-screen bg-dark-shade text-white-shade flex flex-row flex-wrap justify-between items-center'>
+        <h2 className='m-2 text-2xl font-bold text-primary-light'>Baby Blue Skies Travel</h2>         
         <button className='ml-auto' onClick={handleMenuToggle}><FontAwesomeIcon className='fa-2x text-white-shade hover:text-secondary-dark m-4' icon={faBars}/></button>
       </div>
-      <div className={toggleMenu === 'active' ? "flex items-end ml-auto rounded-lg bg-dark-shade max-w-md flex-grow absolute" : "hidden" }>
+      <div className={toggleMenu === 'active' ? "rounded-lg bg-dark-shade max-w-sm absolute top-20 right-0" : "hidden" }>
         <ul className='flex flex-col justify-end items-start p-6 text-white-shade'>
           <li className='hover:text-secondary-dark'><Link to='/about'>About</Link> </li>
           <li className='hover:text-secondary-dark'><Link to='/'>Home</Link></li>
