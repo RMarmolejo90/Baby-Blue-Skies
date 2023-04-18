@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Cta() {
   return (
-    <div className='p-8 text-center flex items-center flex-col justify-center text-lg bg-secondary-light'>
+    <div className='p-8 text-center flex items-center flex-col justify-center text-lg bg-secondary-light lg:px-20'>
         {/* // image */}
         <h1 className='p-4 m-4 text-2xl font-semibold text-primary-dark' >Tired of staring at the same four walls?</h1>
         <h4 className='p-4 m-4' >
