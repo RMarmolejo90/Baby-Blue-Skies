@@ -2,7 +2,7 @@ import React from 'react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import axios from 'axios';
-import { Slide } from 'react-awesome-reveal';
+import { Fade } from 'react-awesome-reveal';
 
 const EmailForm = () => {
   const formik = useFormik({
@@ -34,7 +34,7 @@ const EmailForm = () => {
 
   return (
     <div className='flex flex-col items-center justify-center p-20 bg-secondary-light'>
-      <Slide cascade duration={1000} damping={0.05}>
+      <Fade cascade>
         <h3 className='text-primary-dark font-semibold text-xl p-4'>Want to stay up-to-date on the latest travel deals and offers?</h3>
         <p className='p-4'>Sign up for our email newsletter today!
           By subscribing to our email list, Be the first to know about the best travel deals! 
@@ -61,7 +61,7 @@ const EmailForm = () => {
             <button className='py-2 px-10 mt-8 m-4 tracking-side leading-6 text-sm bg-green-400 font-semibold border rounded-md' type="submit">Submit</button>
           </form>
         </div>
-      </Slide>
+      </Fade>
     </div>
   );
 };
