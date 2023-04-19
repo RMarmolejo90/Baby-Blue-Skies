@@ -32,7 +32,7 @@ const EmailForm = () => {
   });
 
   return (
-    <div className='flex flex-col items-center justify-center p-8 bg-secondary-light'>
+    <div className='flex flex-col items-center justify-center p-8 pb-20 bg-secondary-light'>
       <h3 className='text-primary-dark font-semibold text-xl p-4'>Want to stay up-to-date on the latest travel deals and offers?</h3>
       <p className='p-4'>Sign up for our email newsletter today!
         By subscribing to our email list, Be the first to know about the best travel deals! 
@@ -58,7 +58,7 @@ const EmailForm = () => {
             onBlur={formik.handleBlur}
             value={formik.values.email}
           />
-          <button className='py-2 px-10 m-4 tracking-side leading-6 text-sm bg-green-400 font-semibold border rounded-xl' type="submit">Submit</button>
+          <button className='py-2 px-10 m-4 tracking-side leading-6 text-sm bg-green-400 font-semibold border rounded-md' type="submit">Submit</button>
         </form>
       </div>
     </div>
