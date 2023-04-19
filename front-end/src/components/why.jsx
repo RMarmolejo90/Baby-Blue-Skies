@@ -1,8 +1,11 @@
 import React from 'react'
+import { Slide } from 'react-awesome-reveal'
 
 export default function Why() {
   return (
+    
     <div className='py-8 lg:px-20 bg-secondary-light'>
+      <Slide left cascade duration={1500} damping={0.05} >
         <h2 className='p-4 text-xl text-primary-dark'>So why travel with Baby Blue Skies?</h2>
         <p className='p-4'>
             Because planning a vacation can be stressful, but Baby Blue Skies can make the entire thing, an enjoyable and easy-going experience.
@@ -18,6 +21,7 @@ export default function Why() {
             Whether you're planning a solo adventure or a romantic getaway, our agents will create a personalized itinerary that fits your needs and budget.
             So why stress over travel planning when you can have a friend in the know to help you out? Trust us, your passport will thank you. Let's start planning your dream vacation today!
         </p>
-</div>
+      </Slide>
+    </div>
   )
 }
