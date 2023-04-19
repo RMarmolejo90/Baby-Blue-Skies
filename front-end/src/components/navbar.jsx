@@ -23,10 +23,10 @@ export default function Navbar() {
         </Roll>
       </div>
       <div className={toggleMenu === 'active' ? " rounded-b-xl shadow-xl bg-dark-shade max-w-sm absolute top-20 right-0 z-20" : "hidden" }>
-        <div>  
+        <div className='z-20'>  
           <Fade cascade damping={0.1} duration={3000}>         
             <ul className='flex flex-col justify-end items-start p-6 text-white-shade'>     
-              <li className='hover:text-secondary-dark'><Link to='/about'>About</Link> </li>
+              <li className='hover:text-secondary-dark'><Link preventScrollReset={true} to='/about'>About</Link> </li>
               <li className='hover:text-secondary-dark'><Link to='/'>Home</Link></li>
               <li className='hover:text-secondary-dark'><a href="https://docs.google.com/forms/d/e/1FAIpQLScvZkBlv69f74k6q7XJ9szgq_JoZR9Nhug3dsN67I06iQ5Neg/viewform" target="_blank" rel="noopener noreferrer">Start a New Trip</a></li>
               <li className='hover:text-secondary-dark'><Link to='/contact'>Contact Us</Link></li>              

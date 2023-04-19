@@ -7,6 +7,7 @@ import Error from './pages/error'
 import Unsubscribe from './pages/unsubscribe'
 import About from './pages/about'
 import Contact from './pages/contact'
+import Subscribe from './pages/subscribe'
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
   {
     path: '/contact',
     element: <Contact />
+  },
+  {
+    path:'/subscribe',
+    element: <Subscribe />
   },
 ])
 
