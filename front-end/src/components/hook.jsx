@@ -14,11 +14,18 @@ export default function Hook() {
                     Taking a vacation that doesn't 
                     make you want to rip your hair out. 
                 </h4>
-                <h4 className='p-4 lg:max-w-sm text-xl'>
+                <p className='p-4 lg:max-w-sm text-xl'>
                     Let Baby Blue Skies Travel handle the details 
                     so you can focus on the fun stuff - like deciding what swimsuit to pack.       
-                </h4>
+                </p>
             </div>
+            <ul className='flex flex-wrap justify-around items-center p-4'>
+                <li className="p-4 text-lg font-bold text-primary-dark"><h1>Cruise Trips</h1></li>
+                <li className="p-4 text-lg font-bold text-primary-dark"><h1>Vacation Planning</h1></li>
+                <li className="p-4 text-lg font-bold text-primary-dark"><h1>Tour Europe</h1></li>
+                <li className="p-4 text-lg font-bold text-primary-dark"><h1>Caribbean Resorts</h1></li>            
+                <li className="p-4 text-lg font-bold text-primary-dark"><h1>International Travel</h1></li>            
+            </ul>
         </Slide>
     </div>
   )
