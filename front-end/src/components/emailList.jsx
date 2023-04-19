@@ -33,8 +33,8 @@ const EmailForm = () => {
   });
 
   return (
-    <div className='flex flex-col items-center justify-center p-20 bg-secondary-light'>
-      <Fade cascade>
+    <div className='flex flex-col items-center justify-center lg:p-20 bg-secondary-light'>
+      <Fade cascade damping={0.2}>
         <h3 className='text-primary-dark font-semibold text-xl p-4'>Want to stay up-to-date on the latest travel deals and offers?</h3>
         <p className='p-4'>Sign up for our email newsletter today!
           By subscribing to our email list, Be the first to know about the best travel deals! 

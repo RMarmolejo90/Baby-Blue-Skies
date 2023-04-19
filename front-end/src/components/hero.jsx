@@ -6,7 +6,7 @@ export default function Hero() {
     <div>
         <div className='pb-20 p-10 flex flex-col flex-wrap items-center justify-center min-h-[70vh] bg-[url(../src/assets/images/beach-landscape.jpg)] bg-cover bg-no-repeat'>
             <Fade delay={1000} duration={2000}>
-                <div className='shadow-inner text-center p-6 pb-10 flex flex-col flex-wrap items-center justify-center mt-10 rounded-xl border'> 
+                <div className='shadow-inner  text-center p-6 pb-10 flex flex-col flex-wrap items-center justify-center mt-10 rounded-xl border'> 
                     <h2 className='pb-8 m-4 text-3xl font-bold'>
                         Let's Start Planning Your Dream Vacation!
                     </h2>
