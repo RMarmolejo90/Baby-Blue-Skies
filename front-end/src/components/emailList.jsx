@@ -41,7 +41,7 @@ const EmailForm = () => {
           Sign up for our newsletter to receive updates on the latest discounts and special offers.
         </p>
         <p className='p-4 py-8'>
-          We We promise not to overload your inbox with emails or share your information with third parties. 
+          We promise not to overload your inbox with emails or share your information with third parties. 
           You can unsubscribe at any time by clicking the "unsubscribe" link at the bottom of our emails.
         </p>
         
