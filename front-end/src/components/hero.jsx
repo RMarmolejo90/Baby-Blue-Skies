@@ -12,7 +12,7 @@ export default function Hero() {
                     </h2>
                     {/* cta button */}
                     <JackInTheBox delay={1500} duration={2000}>
-                        <a className='p-3 mx-4 my-8 tracking-wider leading-6 text-md text-center bg-green-500 font-bold border rounded-md' href="https://docs.google.com/forms/d/e/1FAIpQLScvZkBlv69f74k6q7XJ9szgq_JoZR9Nhug3dsN67I06iQ5Neg/viewform">
+                        <a className='p-3 mx-4 my-8 tracking-wider leading-6 text-md text-center bg-button-color font-bold border rounded-md' href="https://docs.google.com/forms/d/e/1FAIpQLScvZkBlv69f74k6q7XJ9szgq_JoZR9Nhug3dsN67I06iQ5Neg/viewform">
                             Start A Trip Request
                     </a>
                     </JackInTheBox>

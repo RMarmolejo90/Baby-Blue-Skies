@@ -57,7 +57,7 @@ const EmailForm = () => {
                     onBlur={formik.handleBlur}
                     value={formik.values.email}
                     />
-                    <button className='py-1 px-2 m-4 tracking-side leading-6 text-sm bg-red-500 font-semibold border rounded-xl' type="submit">Submit</button>
+                    <button className='py-1 px-2 m-4 tracking-side leading-6 text-sm bg-button-color font-semibold border rounded-xl' type="submit">Submit</button>
                 </form>
             </div>
         <Footer />

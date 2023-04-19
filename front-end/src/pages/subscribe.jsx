@@ -62,7 +62,7 @@ const Subscribe = () => {
                 onBlur={formik.handleBlur}
                 value={formik.values.email}
                 />
-                <button className='py-2 px-10 mt-8 m-4 tracking-side leading-6 text-sm bg-green-400 font-semibold border rounded-md' type="submit">Submit</button>
+                <button className='py-2 px-10 mt-8 m-4 tracking-side leading-6 text-sm bg-button-color font-semibold border rounded-md' type="submit">Submit</button>
             </form>
             </div>
         </Fade>

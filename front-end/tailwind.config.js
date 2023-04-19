@@ -15,6 +15,7 @@ export default {
         "dark-shade":  "var(--dark-shade)",
         "light-shade":  "var(--light-shade)",
         "white-shade": "var(--white-shade)",
+        "button-color": "var(--button-color",
 
       }
     },

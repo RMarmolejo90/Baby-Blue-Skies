@@ -5,14 +5,15 @@
 .root,
 #root,
 #docs-root {
-    --primary-dark: #347ce7;
+    --primary-dark: #30A1F0;
     --primary-light: #95dcf4;
-    --secondary-dark: #f2e824;
-    --secondary-light: #f5efd5d2;
+    --secondary-dark: #E8BE4C;
+    --secondary-light: #E8D682;
     --accent-color: ;
     --dark-shade: #2A3439 ;
     --light-shade: #a5bbc0 ;
     --white-shade: #F9F9FB;
+    --button-color: #3EEF2E;
 
 }
 
