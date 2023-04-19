@@ -45,7 +45,7 @@ const EmailForm = () => {
           You can unsubscribe at any time by clicking the "unsubscribe" link at the bottom of our emails.
         </p>
         
-        <div className='border border-white-shade rounded-xl px-6 py-4 shadow-inner-xl shadow-md bg-primary-dark'>
+        <div className='border border-white-shade rounded-lg px-6 py-4 shadow-inner-xl shadow-md bg-primary-dark'>
           <form onSubmit={formik.handleSubmit} className='p-4 flex flex-col items-center justify-center'>
             <label className='pb-6 font-semibold text-lg' htmlFor="email">Sign Up For Travel Deals</label> 
             <input
@@ -58,7 +58,7 @@ const EmailForm = () => {
               onBlur={formik.handleBlur}
               value={formik.values.email}
             />
-            <button className='py-2 px-10 mt-8 m-4 tracking-side leading-6 text-sm bg-button-color font-semibold border rounded-md' type="submit">Submit</button>
+            <button className='py-2 px-10 mt-8 m-4 tracking-side leading-6 text-sm bg-button-color font-semibold border rounded-sm' type="submit">Submit</button>
           </form>
         </div>
       </Fade>
