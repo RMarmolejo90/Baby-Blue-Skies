@@ -5,6 +5,9 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      "logo": ["var(--logo), sans-serif"],
+    },
     extend: {
       colors: {
         "primary-dark":  "var(--primary-dark)",

@@ -17,7 +17,7 @@ export default function Navbar() {
   return (
     <div> 
       <div className='p-2 max-w-screen bg-dark-shade text-white-shade flex flex-row flex-wrap justify-between items-center'>        
-        <h2 className='m-2 text-lg font-bold text-primary-light'>Baby Blue Skies Travel</h2>                
+        <h2 className='m-2 text-2xl pl-2 pr-auto text-primary-light font-logo '>Baby Blue Skies Travel</h2>                
         <Roll cascade delay={0.1} duration={3000}>
           <button className='ml-auto' onClick={handleMenuToggle}><FontAwesomeIcon className='fa-2x text-white-shade hover:text-secondary-dark m-4' icon={faBars}/></button>     
         </Roll>

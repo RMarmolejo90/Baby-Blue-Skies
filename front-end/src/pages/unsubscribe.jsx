@@ -16,7 +16,7 @@ const EmailForm = () => {
     onSubmit: async (values) => {
       console.log('Sending DELETE request to /unsubscribe');
       console.log('Email:', values.email);
-      const res = await axios.delete('http://localhost:3001/unsuscribe', { emailToDelete: values.email }, {
+      const res = await axios.delete('http://www.babyblueskiestravel.com/unsuscribe', { emailToDelete: values.email }, {
         headers: {
           'Content-Type': 'application/json'
         },
