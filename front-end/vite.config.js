@@ -16,6 +16,7 @@ export default defineConfig({
             "@fortawesome/react-fontawesome",
             "@fortawesome/free-brands-svg-icons",
             "swiper",
+            "front-end/src/main.jsx",
         ]
     }
 }}
