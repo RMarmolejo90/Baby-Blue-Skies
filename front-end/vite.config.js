@@ -9,5 +9,4 @@ export default defineConfig({
       input: 'Baby-Blue-Skies/front-end/index.html'
     }
   }
-}
 })
