@@ -11,6 +11,9 @@ export default defineConfig({
             "react-dom",
             "react-router-dom",
             "Formik",
+            "yup",
+            "react-awesome-reveal",
+            "font-awesome",
         ]
     }
 }}
