@@ -13,7 +13,8 @@ export default defineConfig({
             "Formik",
             "yup",
             "react-awesome-reveal",
-            '@fortawesome/react-fontawesome',
+            "@fortawesome/react-fontawesome",
+            "@fortawesome/free-brands-svg-icons",
         ]
     }
 }}
