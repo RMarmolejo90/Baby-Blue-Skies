@@ -4,7 +4,7 @@
   "description": "",
   "main": "server/server.js",
   "scripts": {
-    "build": "vite build",
+    "build": "react-scripts build",
     "dev": "nodemon server/server.js",
     "start": "node server/server.js"
   },
