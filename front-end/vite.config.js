@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      input: 'Baby-Blue-Skies/front-end/index.html'
+      input: 'path/to/index.html'
     }
   }
 }
