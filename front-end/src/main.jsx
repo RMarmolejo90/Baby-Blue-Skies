@@ -9,7 +9,6 @@ import About from './pages/about'
 import Contact from './pages/contact'
 import Subscribe from './pages/subscribe'
 
-import React from 'react'
 
 export default function main() {
 
