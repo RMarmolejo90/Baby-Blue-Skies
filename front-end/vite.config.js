@@ -9,7 +9,8 @@ export default defineConfig({
         external: [
             "react",
             "react-dom",
-            "react-router-dom"
+            "react-router-dom",
+            "Formik",
         ]
     }
 }}
