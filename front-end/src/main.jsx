@@ -9,6 +9,11 @@ import About from './pages/about'
 import Contact from './pages/contact'
 import Subscribe from './pages/subscribe'
 
+import React from 'react'
+
+export default function main() {
+
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -39,3 +44,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <RouterProvider router={router} />
   </React.StrictMode>,
 )
+}

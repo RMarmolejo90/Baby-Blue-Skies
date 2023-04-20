@@ -9,9 +9,6 @@ app.use(bodyParser.json());
 const subscribe = async (req, res) => {
     const { userEmail } = req.body;
     console.log('Incoming data:', req.body);
-    // if (!userEmail) {
-    //     return res.status(400).send('Email address is required');
-    // }
     try {
         const duplicateEmail = await email.findOne({ email: userEmail });
         if (duplicateEmail) {
