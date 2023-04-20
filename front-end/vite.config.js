@@ -15,6 +15,7 @@ export default defineConfig({
             "react-awesome-reveal",
             "@fortawesome/react-fontawesome",
             "@fortawesome/free-brands-svg-icons",
+            "swiper",
         ]
     }
 }}
