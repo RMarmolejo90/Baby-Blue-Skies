@@ -2,7 +2,7 @@
   "name": "baby-blue-skies",
   "version": "1.0.0",
   "description": "",
-  "main": "front-end/index.html",
+  "main": "front-end/src/main.jsx",
   "scripts": {
     "build": "vite build front-end",
     "dev": "nodemon server/server.js",
