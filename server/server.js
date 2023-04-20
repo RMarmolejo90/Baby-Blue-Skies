@@ -25,7 +25,7 @@ try{
 }
 
 // Set the MIME type header for the JavaScript file
-app.use('/static', express.static(path.join(__dirname, 'front-end'), {
+app.use('/static', express.static(path.join(__dirname, 'dist'), {
     setHeaders: function (res, path) {
       if (path.endsWith('.jsx')) {
         res.setHeader('Content-Type', 'text/javascript');
