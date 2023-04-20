@@ -17,6 +17,7 @@ export default defineConfig({
             "@fortawesome/free-brands-svg-icons",
             "swiper",
             "front-end/src/main.jsx",
+            "front-end/src/index.html",
         ]
     }
 }}
