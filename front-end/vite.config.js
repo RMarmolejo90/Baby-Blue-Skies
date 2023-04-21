@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-        input: ['/front-end/src/index.html'],
+        input: ['/front-end/src/main.jsx'],
         external: [
             "react",
             "react-dom",
