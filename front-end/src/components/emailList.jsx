@@ -2,7 +2,7 @@ import React from 'react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import axios from 'axios';
-import { Fade } from 'react-awesome-reveal';
+import { Slide } from 'react-awesome-reveal';
 
 const EmailForm = () => {
   const formik = useFormik({
@@ -34,7 +34,7 @@ const EmailForm = () => {
 
   return (
     <div className='flex flex-col items-center justify-center lg:p-20 bg-secondary-light'>
-      <Fade cascade damping={0.2}>
+      <Slide left duration={300} >
         <h3 className='text-primary-dark font-semibold text-xl p-4'>Want to stay up-to-date on the latest travel deals and offers?</h3>
         <p className='p-4'>Sign up for our email newsletter today!
           By subscribing to our email list, Be the first to know about the best travel deals! 
@@ -47,9 +47,9 @@ const EmailForm = () => {
         
         <div className='border border-white-shade rounded-lg px-6 py-4 shadow-inner-xl shadow-md bg-primary-dark'>
           <form onSubmit={formik.handleSubmit} className='p-4 flex flex-col items-center justify-center'>
-            <label className='pb-6 font-semibold text-lg' htmlFor="email">Sign Up For Travel Deals</label> 
+            <label className='pb-6 font-semibold text-lg accent-accent-color' htmlFor="email">Sign Up For Travel Deals</label> 
             <input
-              className='border-2 rounded-lg px-4 m-4 tracking-side leading-6 text-center'
+              className='border-2 rounded-lg px-4 m-4 tracking-side leading-6 text-center accent-accent-color'
               id="email"
               name="email"
               type="email"
@@ -61,7 +61,7 @@ const EmailForm = () => {
             <button className='py-2 px-10 mt-8 m-4 tracking-side leading-6 text-sm bg-button-color font-semibold border rounded-sm' type="submit">Submit</button>
           </form>
         </div>
-      </Fade>
+      </Slide>
     </div>
   );
 };

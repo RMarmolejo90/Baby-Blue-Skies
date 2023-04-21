@@ -4,9 +4,9 @@ import { Fade } from 'react-awesome-reveal'
 export default function Cta() {
   return (
     <div className='p-4 py-20 text-center flex items-center flex-col justify-center text-lg bg-secondary-light lg:px-20'>
-     <Fade cascade fraction={0.25} damping={0.3} duration={1500}>
+     <Fade duration={2000}>
         {/* // image */}
-        <h1 className='p-4 m-4 text-2xl font-semibold text-primary-dark' >Tired of staring at the same four walls?</h1>
+        <h1 className='p-4 m-4 text-3xl font-semibold text-primary-dark' >Tired of staring at the same four walls?</h1>
         <h4 className='p-4 m-4' >
           Let us help you plan your next big adventure! Our expert travel agents will guide you every step of the way and make sure your trip is unforgettable. 
           Don't let your wanderlust go to waste - contact us today and let's start planning your dream escape!

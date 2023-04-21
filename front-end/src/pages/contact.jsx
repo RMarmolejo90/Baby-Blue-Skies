@@ -12,7 +12,7 @@ export default function Contact() {
     <div>
         <Navbar />
         <Fade duration={3000} cascade damping={0.5}>
-          <div className='px-20 py-10'>
+          <div className='p-8 lg:p-20'>
               <h3 className='text-center text-4xl text-primary-dark font-bold'>Contact Us</h3>
               <p className='py-10'>We're thrilled that you're considering reaching out to us! 
               Our team is dedicated to helping you plan the perfect getaway and creating unforgettable experiences. 

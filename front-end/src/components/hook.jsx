@@ -5,7 +5,7 @@ import frustratedImage from '../assets/images/frustrated.jpg';
 export default function Hook() {
   return (
     <div className='bg-primary-light py-24 lg:p-20 flex flex-col lg:flex-row flex-wrap items-center justify-center'>
-        <Slide duration={1000}>
+        <Slide duration={300}>
             <div className='lg:max-w-lg flex flex-col items-center justify-center' >    
                 <img className='max-w-[100vw] xl:max-w-md lg:pr-4 lg:max-w-sm' src={frustratedImage} alt="frustrated man sitting on a beach" />
             </div>
@@ -20,6 +20,8 @@ export default function Hook() {
                     so you can focus on the fun stuff - like deciding what swimsuit to pack.       
                 </p>
             </div>
+        </Slide>
+        <Slide duration={300} cascade>
             <ul className='flex flex-wrap justify-around items-center p-4'>
                 <li className="p-4 text-lg font-bold text-primary-dark"><h1>Cruise Trips</h1></li>
                 <li className="p-4 text-lg font-bold text-primary-dark"><h1>Vacation Planning</h1></li>

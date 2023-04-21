@@ -8,7 +8,7 @@ export default function About() {
     <div>
         <Navbar />
         <Fade cascade damping={0.5} duration={3000}>
-            <div className='px-20'>
+            <div className='p-8 lg:p-20'>
                 <h2 className='text-primary-dark text-2xl font-bold lg:text-4xl text-center px-4 py-8'>About Us</h2>
                 <p className='px-4 py-8'>
                     At Baby Blue Skies Travel Agency, we have been providing top-notch travel services to all our clients. Our passion for travel and commitment to excellence has made us one of the most trusted travel agencies in the industry.

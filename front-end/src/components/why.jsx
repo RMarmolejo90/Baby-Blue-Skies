@@ -5,7 +5,7 @@ export default function Why() {
   return (
     
     <div className='py-8 lg:px-20 bg-secondary-light'>
-      <Slide left cascade duration={1500} damping={0.05} >
+      <Slide left duration={300} >
         <h2 className='p-4 text-xl text-primary-dark'>So why travel with Baby Blue Skies?</h2>
         <p className='p-4'>
             Because planning a vacation can be stressful, but Baby Blue Skies can make the entire thing, an enjoyable and easy-going experience.
