@@ -8,7 +8,8 @@ export default defineConfig({
         rollupOptions: {
           input: {
             main: './index.html',
-          }
+          },
+          outDir: '../dist',
         }
       },
       
@@ -24,5 +25,5 @@ export default defineConfig({
         'swiper',
         'axios',
       ],
-    },
+  },
 );
