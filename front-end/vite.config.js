@@ -6,20 +6,18 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-        input: ['/front-end/src/main.jsx'],
-        external: [
-            "react",
-            "react-dom",
-            "react-router-dom",
-            "Formik",
-            "yup",
-            "react-awesome-reveal",
-            "@fortawesome/react-fontawesome",
-            "@fortawesome/free-brands-svg-icons",
-            "swiper",
-            "front-end/src/main.jsx",
-            "front-end/src/index.html",
-        ]
+      input: './src/main.jsx',
+      external: [
+        'react',
+        'react-dom',
+        'react-router-dom',
+        'Formik',
+        'yup',
+        'react-awesome-reveal',
+        '@fortawesome/react-fontawesome',
+        '@fortawesome/free-brands-svg-icons',
+        'swiper'
+      ]
     }
-}}
-)
+  }
+})
