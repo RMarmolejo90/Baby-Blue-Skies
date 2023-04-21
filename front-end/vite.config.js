@@ -14,7 +14,8 @@ export default defineConfig({
           }
         },
         assetsInclude: [
-          '**/*.webp'
+          '**/*.webp',
+          '/assets/sliderImages',
         ],
       },
       
@@ -29,6 +30,8 @@ export default defineConfig({
         '@fortawesome/free-brands-svg-icons',
         'swiper',
         'axios',
+        './src/assets/sliderImages/',
+        './src/assets/images/',
       ],
   },
 );

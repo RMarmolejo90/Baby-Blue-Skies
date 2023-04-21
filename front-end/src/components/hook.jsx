@@ -1,12 +1,13 @@
 import React from 'react'
 import { Slide } from 'react-awesome-reveal'
+import frustratedImage from '../assets/images/frustrated.jpg';
 
 export default function Hook() {
   return (
     <div className='bg-primary-light py-24 lg:p-20 flex flex-col lg:flex-row flex-wrap items-center justify-center'>
         <Slide duration={1000}>
             <div className='lg:max-w-lg flex flex-col items-center justify-center' >    
-                <img className='max-w-[100vw] xl:max-w-md lg:pr-4 lg:max-w-sm' src="../src/assets/images/frustrated.jpg" alt="frustrated man sitting on a beach" />
+                <img className='max-w-[100vw] xl:max-w-md lg:pr-4 lg:max-w-sm' src={frustratedImage} alt="frustrated man sitting on a beach" />
             </div>
             <div className='lg:pl-4 py-4'>
                 <h2 className='p-4 w-full text-xl text-primary-dark font-semibold'>Know what's better than taking a vacation? </h2>
