@@ -12,7 +12,10 @@ export default defineConfig({
           output: {
             outDir: '../dist',
           }
-        }
+        },
+        assetsInclude: [
+          '**/*.webp'
+        ],
       },
       
       external: [

@@ -2,6 +2,7 @@
   "name": "baby-blue-skies",
   "version": "2.0.0",
   "description": "",
+  "main": "/front-end/dist/index.html",
   "scripts": {
     "clean": "del /s /q dist",
     "build": "vite build",
