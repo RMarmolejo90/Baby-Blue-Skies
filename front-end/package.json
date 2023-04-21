@@ -3,7 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "main": "/public/index.html",
   "scripts": {
+    "clean": "del /s /q dist",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
