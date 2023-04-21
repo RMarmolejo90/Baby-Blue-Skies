@@ -9,7 +9,9 @@ export default defineConfig({
           input: {
             main: './index.html',
           },
-          outDir: '../dist',
+          output: {
+            outDir: '../dist',
+          }
         }
       },
       
