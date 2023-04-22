@@ -1,115 +1,115 @@
-import Athens from '../assets/images/sliderImages/Athens-greece.jpeg';
-import Bermuda from '../assets/images/sliderImages/bermuda.jpeg';
-import Maldives from '../assets/images/sliderImages/Central-Province-Maldives.jpeg';
-import iceland from '../assets/images/sliderImages/iceland.jpeg';
-import ireland from '../assets/images/sliderImages/ireland.jpeg';
-import Costa from '../assets/images/sliderImages/Limón-Costa-Rica.jpeg';
-import Laos from '../assets/images/sliderImages/Luang-Prabang-Province-Laos.jpeg';
-import Male from '../assets/images/sliderImages/Male-Maldives.jpeg';
-import Canada from '../assets/images/sliderImages/moraine-lake-canada.jpeg';
-import Norway from '../assets/images/sliderImages/Myrland-Nordland-Norway.jpeg';
-import Bahamas from '../assets/images/sliderImages/Nassau-Nova-Providência-Bahamas.jpeg';
-import Paris from '../assets/images/sliderImages/paris-france.jpeg';
-import Brazil from '../assets/images/sliderImages/rio-de-janeiro-brazil.jpeg';
-import Rome from '../assets/images/sliderImages/Rome-Colloseum.jpeg';
-import Bautista from '../assets/images/sliderImages/San-Juan-Bautista.jpeg';
-import Greece from '../assets/images/sliderImages/Santorini-Greece.jpeg';
-import Mexico from '../assets/images/sliderImages/Tangier-morocco.jpeg';
-import Singapore from '../assets/images/sliderImages/singapore.jpeg';
-import Tokyo from '../assets/images/sliderImages/tokyo-japan-1.jpeg';
-import Venice from '../assets/images/sliderImages/Venice-Veneto-Italy.jpeg';
-import Wicklow from '../assets/images/sliderImages/Wicklow-Ireland.jpeg';
-import Poland from '../assets/images/sliderImages/Zakopane-poland.jpeg';
+const Athens = '../assets/images/sliderImages/Athens-greece.jpeg';
+const Bermuda = '../assets/images/sliderImages/bermuda.jpeg';
+const Maldives = '../assets/images/sliderImages/Central-Province-Maldives.jpeg';
+const iceland = '../assets/images/sliderImages/iceland.jpeg';
+const ireland = '../assets/images/sliderImages/ireland.jpeg';
+const Costa = '../assets/images/sliderImages/Limón-Costa-Rica.jpeg';
+const Laos = '../assets/images/sliderImages/Luang-Prabang-Province-Laos.jpeg';
+const Male = '../assets/images/sliderImages/Male-Maldives.jpeg';
+const Canada = '../assets/images/sliderImages/moraine-lake-canada.jpeg';
+const Norway = '../assets/images/sliderImages/Myrland-Nordland-Norway.jpeg';
+const Bahamas = '../assets/images/sliderImages/Nassau-Nova-Providência-Bahamas.jpeg';
+const Paris = '../assets/images/sliderImages/paris-france.jpeg';
+const Brazil = '../assets/images/sliderImages/rio-de-janeiro-brazil.jpeg';
+const Rome = '../assets/images/sliderImages/Rome-Colloseum.jpeg';
+const Bautista = '../assets/images/sliderImages/San-Juan-Bautista.jpeg';
+const Greece = '../assets/images/sliderImages/Santorini-Greece.jpeg';
+const Mexico = '../assets/images/sliderImages/Tangier-morocco.jpeg';
+const Singapore = '../assets/images/sliderImages/singapore.jpeg';
+const Tokyo = '../assets/images/sliderImages/tokyo-japan-1.jpeg';
+const Venice = '../assets/images/sliderImages/Venice-Veneto-Italy.jpeg';
+const Wicklow = '../assets/images/sliderImages/Wicklow-Ireland.jpeg';
+const Poland = '../assets/images/sliderImages/Zakopane-poland.jpeg';
 
 
 const sliders = [
     {
         location: "Athens, Greece",
-        image: { Athens },
+        image: Athens,
     },
     {
         location: "Bermuda",
-        image: { Bermuda },
+        image: Bermuda ,
     },
     {
         location: "Central Province, Maldives",
-        image: {Maldives},
+        image: Maldives,
     },
     {
         location: "Iceland",
-        image: {iceland},
+        image: iceland,
     },
     {
         location: "Ireland",
-        image: {ireland},
+        image: ireland,
     },
     {
         location: "Limon, Costa Rica",
-        image: {Costa},
+        image: Costa,
     },
     {
         location: "Luang Prabang Province, Laos",
-        image: {Laos},
+        image: Laos,
     },
     {
         location: "Male, Maldives",
-        image: {Male},
+        image: Male,
     },
     {
         location: "Moraine Lake, Canada",
-        image: {Canada},
+        image: Canada,
     },
     {
         location: "Myrland, Nordland, Norway",
-        image: {Norway},
+        image: Norway,
     },
     {
         location: "Nassau, Nova Providência, Bahamas",
-        image: {Bahamas},
+        image: Bahamas,
     },
     {
         location: "Paris, France",
-        image: {Paris},
+        image: Paris,
     },
     {
         location: "Rio de Janeiro, Brazil",
-        image: {Brazil},
+        image: Brazil,
     },
     {
         location: "Rome, Italy",
-        image: {Rome},
+        image: Rome,
     },
     {
         location: "San Juan Bautista, California",
-        image: {Bautista},
+        image: Bautista,
     },
     {
         location: "Santorini, Greece",
-        image: {Greece},
+        image: Greece,
     },
     {
         location: "Tangier, Morocco",
-        image: {Mexico},
+        image: Mexico,
     },
     {
         location: "Singapore",
-        image: {Singapore},
+        image: Singapore,
     },
     {
         location: "Tokyo, Japan",
-        image: {Tokyo},
+        image: Tokyo,
     },
     {
         location: "Venice, Italy",
-        image: {Venice},
+        image: Venice,
     },
     {
         location: "Wicklow, Ireland",
-        image: {Wicklow},
+        image: Wicklow,
     },
     {
         location: "Zakopane, Poland",
-        image: {Poland},
+        image: Poland,
     },
 ];
 
