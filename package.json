@@ -8,7 +8,7 @@
   "main": "/front-end/dist/assets/main-0e5f3010.js",
   "scripts": {
     "clean": "del /s /q dist",
-    "build": "vite build",
+    "build": "node server/server.js",
     "dev": "nodemon server/server.js",
     "start": "node server/server.js"
   },
