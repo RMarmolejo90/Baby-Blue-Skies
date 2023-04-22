@@ -14,9 +14,8 @@ const EmailForm = () => {
       email: Yup.string().email('Invalid email address').required('Required'),
     }), 
     onSubmit: async (values) => {
-      console.log('Sending POST request to /');
-      console.log('Email:', values.email);
-      const res = await axios.post('http://www.babyblueskiestravel.com/', { userEmail: values.email }, {
+      console.log('Sending POST request');
+      await axios.post('/', { userEmail: values.email }, {
         headers: {
           'Content-Type': 'application/json'
         },

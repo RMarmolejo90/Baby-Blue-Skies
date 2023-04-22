@@ -24,14 +24,14 @@ try{
     console.error(error);
 }
 
-// Set the MIME type header for the JavaScript file
-app.use('/static', express.static(path.join(__dirname, '/front-end'), {
-    setHeaders: function (res, path) {
-      if (path.endsWith('.jsx')) {
-        res.setHeader('Content-Type', 'text/javascript');
-      }
-    }
-  }));
+// // Set the MIME type header for the JavaScript file
+// app.use('/static', express.static(path.join(__dirname, '/front-end'), {
+//     setHeaders: function (res, path) {
+//       if (path.endsWith('.jsx')) {
+//         res.setHeader('Content-Type', 'text/javascript');
+//       }
+//     }
+//   }));
 
 
 // Create email (write to database)
