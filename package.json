@@ -5,7 +5,7 @@
     "node": "18.12.1"
   },
   "description": "",
-  "main": "/server/server.js",
+  "main": "server/server.js",
   "scripts": {
     "clean": "del /s /q dist",
     "build": "vite build",

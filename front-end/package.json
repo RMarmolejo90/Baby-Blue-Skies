@@ -2,6 +2,9 @@
   "name": "front-end",
   "private": true,
   "version": "18.12.1",
+  "engines": {
+    "node": "18.12.1"
+  },
   "type": "module",
   "scripts": {
     "clean": "del /s /q dist",
