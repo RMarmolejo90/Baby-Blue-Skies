@@ -9,18 +9,13 @@ export default defineConfig({
           input: {
             main: './index.html',
           },
-          output: {
-            outDir: '../dist',
-          },
-
         },
 
         assetsInclude: [
           'webp',
-          './assets/sliderImages',
+          '/src/assets/sliderImages/Athens-greece',
         ],
       },
-      
       external: [
         'react',
         'react-dom',
