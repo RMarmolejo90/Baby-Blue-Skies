@@ -12,24 +12,20 @@ export default defineConfig({
           },
         },
 
-        assetsInclude: [
+        assetsInclude:
           'webp',
-          '/src/assets/sliderImages/Athens-greece',
-        ],
       },
-      external: [
-        'react',
-        'react-dom',
-        'react-router-dom',
-        'Formik',
-        'yup',
-        'react-awesome-reveal',
-        '@fortawesome/react-fontawesome',
-        '@fortawesome/free-brands-svg-icons',
-        'swiper',
-        'axios',
-        './src/assets/sliderImages/',
-        './src/assets/images/',
-      ],
+      // external: [
+      //   'react',
+      //   'react-dom',
+      //   'react-router-dom',
+      //   'Formik',
+      //   'yup',
+      //   'react-awesome-reveal',
+      //   '@fortawesome/react-fontawesome',
+      //   '@fortawesome/free-brands-svg-icons',
+      //   'swiper',
+      //   'axios',
+      // ],
   },
 );
