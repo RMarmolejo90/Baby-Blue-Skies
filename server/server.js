@@ -33,6 +33,16 @@ try{
 //     }
 //   }));
 
+const path = require('path');
+
+// Serve static files from the React build directory
+app.use(express.static(path.join(__dirname, '..', 'front-end', 'dist')));
+
+// Serve the index.html file for any other requests
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '..', 'front-end', 'dist', 'index.html'));
+});
+
 
 // Create email (write to database)
 app.post('/', emailController.subscribe );
