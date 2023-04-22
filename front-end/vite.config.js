@@ -8,7 +8,7 @@ export default defineConfig({
         manifest: true,
         rollupOptions: {
           input: {
-            main: './src/main.jsx',
+            main: './index.html',
           },
         },
 
