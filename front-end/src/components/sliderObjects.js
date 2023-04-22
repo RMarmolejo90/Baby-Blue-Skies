@@ -26,19 +26,19 @@ import Poland from '../assets/sliderImages/Zakopane-poland.webp';
 const sliders = [
     {
         location: "Athens, Greece",
-        image: "Athens",
+        image: { Athens },
     },
     {
         location: "Bermuda",
-        image: "Bermuda",
+        image: {Bermuda},
     },
     {
         location: "Central Province, Maldives",
-        image: "Maldives",
+        image: {Maldives},
     },
     {
         location: "Iceland",
-        image: "iceland",
+        image: {iceland},
     },
     {
         location: "Ireland",
