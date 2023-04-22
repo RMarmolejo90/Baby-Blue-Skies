@@ -16,7 +16,7 @@ const subscribe = async (req, res) => {
         } else {
         const newEmail = new email({ email: userEmail });
         await newEmail.save();
-        res.send(`Thank you for subscribing! ${userEmail} has been added to our email list`)}
+        res.json({message: `Thank you for subscribing! ${userEmail} has been added to our email list`})}
     } catch (error) {
         console.error(error);
         res.status(500).send('Internal server error');
