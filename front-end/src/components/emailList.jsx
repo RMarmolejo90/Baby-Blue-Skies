@@ -21,13 +21,12 @@ const EmailForm = () => {
         },
       }) .then (function (response) {
         alert('Thank you for subscribing!')
-        console.log(values)
-        console.log(response)
+        console.log(response);
+        formik.resetForm();
       }) .catch (function (error) {
         console.log (error)
         if (error.response.status === 409){ alert('This email is already subscribed')}
       });
-      formik.resetForm();
     }
     
   });

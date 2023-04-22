@@ -27,7 +27,7 @@ const subscribe = async (req, res) => {
 
 const unsubscribe = async (req, res) => {
     // find email in db
-    const { emailToDelete }= req.body.email
+    const { emailToDelete } = req.body;
     // Make sure the email exists in the database
     try {
         const result = await email.findOne({ email: emailToDelete });

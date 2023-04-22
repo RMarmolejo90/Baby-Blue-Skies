@@ -20,7 +20,7 @@ if (process.env.NODE_ENV != "production"){
 // Connect to database
 try{
      connectToDb();
-} catch(err) {
+} catch(error) {
     console.error(error);
 }
 
@@ -33,15 +33,15 @@ try{
 //     }
 //   }));
 
-const path = require('path');
+// const path = require('path');
 
-// Serve static files from the React build directory
-app.use(express.static(path.join(__dirname, '..', 'front-end', 'dist')));
+// // Serve static files from the React build directory
+// app.use(express.static(path.join(__dirname, '..', 'front-end', 'dist')));
 
-// Serve the index.html file for any other requests
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '..', 'front-end', 'dist', 'index.html'));
-});
+// // Serve the index.html file for any other requests
+// app.get('*', (req, res) => {
+//   res.sendFile(path.join(__dirname, '..', 'front-end', 'dist', 'index.html'));
+// });
 
 
 // Create email (write to database)
@@ -50,15 +50,34 @@ app.post('/', emailController.subscribe );
 // Delete (unsubscribe)
 app.delete('/unsubscribe', emailController.unsubscribe);
 
+// Catch 404 errors
+app.use((req, res, next) => {
+    const error = new Error('Not found');
+    error.status = 404;
+    next(error);
+});
+
+// Error handling middleware
+app.use((error, req, res, next) => {
+    res.status(error.status || 500);
+    res.json({
+        error: {
+            message: error.message,
+        },
+    });
+});
+
 // Start Server
 app.get('/', (req, res) => {
     const PORT = process.env.PORT;
     res.send(`server on port ${PORT}`);
+    console.log(req.url);
+    console.log(res.PORT);
   })
 
 try {
     app.listen(process.env.PORT);
 
-} catch(err) {
+} catch(error) {
     console.error(error);
 }
