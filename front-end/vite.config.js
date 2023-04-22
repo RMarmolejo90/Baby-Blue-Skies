@@ -13,7 +13,7 @@ export default defineConfig({
         },
 
         assetsInclude:
-          'webp',
+          'jpeg',
       },
       // external: [
       //   'react',

@@ -17,8 +17,8 @@ export default function Navbar() {
   }
   return (
     <div> 
-      <div className='p-2 max-w-screen bg-secondary-light font-semibold text-dark-shade flex flex-row flex-wrap justify-between items-center'>        
-        <Link to='/'><h2 className='m-2 text-2xl pl-2 pr-auto font-logo '>Baby Blue Skies Travel</h2></Link>                
+      <div className=' max-w-screen bg-white-shade font-semibold text-dark-shade flex flex-row flex-wrap justify-between items-center'>        
+        <Link to='/'><h2 className='text-2xl pl-2 pr-auto font-logo '>Baby Blue Skies Travel</h2></Link>                
         <Roll cascade delay={0.1} duration={3000}>
           <button className='ml-auto' onClick={handleMenuToggle}><FontAwesomeIcon className='fa-2x text-dark-shade hover:text-secondary-dark m-4' icon={faBars}/></button>     
         </Roll>
