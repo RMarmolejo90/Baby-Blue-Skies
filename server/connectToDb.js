@@ -8,7 +8,11 @@ if (process.env.NODE_ENV != "production"){
 // Connect to DB
 async function connectToDB(){
     try{
-        await mongoose.connect(process.env.DB_URL);
+        await mongoose.connect(process.env.DB_URL, {
+            useNewUrlParser: true,
+            useCreateIndex: true,
+            useUnifiedTopology: true
+        });
         console.log("connected to database");
     } catch(err) {
         console.log(err);
