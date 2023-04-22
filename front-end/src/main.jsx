@@ -4,10 +4,13 @@ import App from './App'
 import './global.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Error from './pages/error'
-import Unsubscribe from './pages/unsubscribe'
-import About from './pages/about'
-import Contact from './pages/contact'
-import Subscribe from './pages/subscribe'
+import loadable from '@loadable/component'
+
+const Unsubscribe = loadable(() => import('./pages/unsubscribe'));
+const About = loadable(() => import('./pages/about'));
+const Contact = loadable(() => import('./pages/contact'));
+const Subscribe = loadable(() => import('./pages/subscribe'));
+
 
 
 const router = createBrowserRouter([

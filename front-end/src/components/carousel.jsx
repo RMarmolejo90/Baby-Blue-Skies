@@ -1,13 +1,15 @@
 // import Swiper core and required modules
 import { Navigation, EffectCube, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import sliderImages from '../assets/sliderObjects.js';
 // Import Swiper styles
 import 'swiper/css/bundle';
 import 'swiper/css/navigation';
 import 'swiper/css/autoplay';
 import 'swiper/css/effect-cube';
 import { Fade } from 'react-awesome-reveal';
+import loadable from '@loadable/component';
+
+const sliderImages = loadable(() => ('./sliderObjects.js'))
 
 //content
 

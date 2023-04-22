@@ -1,8 +1,8 @@
 {
   "name": "baby-blue-skies",
-  "version": "2.0.0",
+  "version": "2.1.1",
   "description": "",
-  "main": "/front-end/dist/index.html",
+  "main": "/server/server.js",
   "scripts": {
     "clean": "del /s /q dist",
     "build": "vite build",
@@ -27,7 +27,6 @@
     "express": "^4.18.2",
     "formik": "^2.2.9",
     "mongoose": "^7.0.3",
-    "swiper": "^9.2.3",
     "vite": "^4.2.2",
     "yup": "^1.1.1"
   },

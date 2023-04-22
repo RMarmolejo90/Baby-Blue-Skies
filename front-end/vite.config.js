@@ -11,11 +11,13 @@ export default defineConfig({
           },
           output: {
             outDir: '../dist',
-          }
+          },
+
         },
+
         assetsInclude: [
-          '**/*.webp',
-          '/assets/sliderImages',
+          'webp',
+          './assets/sliderImages',
         ],
       },
       

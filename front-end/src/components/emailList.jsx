@@ -4,6 +4,7 @@ import * as Yup from 'yup';
 import axios from 'axios';
 import { Slide } from 'react-awesome-reveal';
 
+
 const EmailForm = () => {
   const formik = useFormik({
     initialValues: {
