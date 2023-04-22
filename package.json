@@ -5,7 +5,7 @@
     "node": "18.12.1"
   },
   "description": "",
-  "main": "server/server.js",
+  "main": "/front-end/dist/assets/main-0e5f3010.js",
   "scripts": {
     "clean": "del /s /q dist",
     "build": "vite build",
