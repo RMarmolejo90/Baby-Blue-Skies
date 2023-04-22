@@ -15,7 +15,7 @@ const EmailForm = () => {
     }), 
     onSubmit: async (values) => {
       console.log('Sending POST request');
-      await axios.post('/', { userEmail: values.email }, {
+      const res = await axios.post('/', { userEmail: values.email }, {
         headers: {
           'Content-Type': 'application/json'
         },
