@@ -23,11 +23,11 @@ export default function Hook() {
         </Slide>
         <Slide duration={300} cascade>
             <ul className='flex flex-wrap justify-around items-center p-4'>
-                <li className="p-4 text-lg font-bold text-primary-dark"><h1>Cruise Trips</h1></li>
-                <li className="p-4 text-lg font-bold text-primary-dark"><h1>Vacation Planning</h1></li>
-                <li className="p-4 text-lg font-bold text-primary-dark"><h1>Tour Europe</h1></li>
-                <li className="p-4 text-lg font-bold text-primary-dark"><h1>Caribbean Resorts</h1></li>            
-                <li className="p-4 text-lg font-bold text-primary-dark"><h1>International Travel</h1></li>            
+                <li className="p-4 text-2xl font-bold text-primary-dark"><h1>Cruise Trips</h1></li>
+                <li className="p-4 text-2xl font-bold text-primary-dark"><h1>Vacation Planning</h1></li>
+                <li className="p-4 text-2xl font-bold text-primary-dark"><h1>Tour Europe</h1></li>
+                <li className="p-4 text-2xl font-bold text-primary-dark"><h1>Caribbean Resorts</h1></li>            
+                <li className="p-4 text-2xl font-bold text-primary-dark"><h1>International Travel</h1></li>            
             </ul>
         </Slide>
     </div>
