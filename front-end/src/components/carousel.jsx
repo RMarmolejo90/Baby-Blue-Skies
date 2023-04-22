@@ -7,7 +7,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/autoplay';
 import 'swiper/css/effect-cube';
 import { Fade } from 'react-awesome-reveal';
-import sliderImages from './sliderObjects';
+import sliders from './sliderObjects';
 
 //content
 
@@ -32,14 +32,14 @@ export default () => {
           onSlideChange={() => console.log('slide change')}
           className="lg:max-w-xl shadow-2xl contrast-125"
         >
-          {sliderImages.map( (sliderImages, index) => (
+          {sliders.map( (sliders, index) => (
             <SwiperSlide key={index} className='slide'  >
               <div className='slide-wrapper'>
-                <img className='swiper-image rounded-lg lg:min-h-max' loading="lazy" src={sliderImages.image} alt={sliderImages.location} />
+                <img className='swiper-image rounded-lg lg:min-h-max' loading="lazy" src={sliders.image} alt={sliders.location} />
                 <div className="swiper-lazy-preloader"></div>
-                {/* <div className=' relative  '>
-                  <h2 >{sliderImages.location}</h2>
-                </div> */}
+                <div className=' relative mb-32 '>
+                  <h2 >{sliders.location}</h2>
+                </div> 
               </div>
             </SwiperSlide>
           ) )}
