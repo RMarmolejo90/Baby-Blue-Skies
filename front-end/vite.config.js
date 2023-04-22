@@ -13,7 +13,7 @@ export default defineConfig({
         },
 
         assetsInclude:
-          'jpeg',
+          '*.jpeg',
       },
       // external: [
       //   'react',
