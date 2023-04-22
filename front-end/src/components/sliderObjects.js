@@ -23,98 +23,94 @@ import Wicklow from '../assets/sliderImages/Wicklow-Ireland.webp';
 import Poland from '../assets/sliderImages/Zakopane-poland.webp';
 
 
-import sliders from [
+const sliders = [
     {
         location: "Athens, Greece",
-        image: Athens,
+        image: "Athens",
     },
     {
         location: "Bermuda",
-        image: Bermuda,
-    },
-    {
-        location: "Bordeaux, France",
-        image: Bordeaux,
+        image: "Bermuda",
     },
     {
         location: "Central Province, Maldives",
-        image: Maldives,
+        image: "Maldives",
     },
     {
         location: "Iceland",
-        image: iceland,
+        image: "iceland",
     },
     {
         location: "Ireland",
-        image: ireland,
+        image: "ireland",
     },
     {
         location: "Limon, Costa Rica",
-        image: Costa,
+        image: "Costa",
     },
     {
         location: "Luang Prabang Province, Laos",
-        image: Laos,
+        image: "Laos",
     },
     {
         location: "Male, Maldives",
-        image: Male,
+        image: "Male",
     },
     {
         location: "Moraine Lake, Canada",
-        image: Canada,
+        image: "Canada",
     },
     {
         location: "Myrland, Nordland, Norway",
-        image: Norway,
+        image: "Norway",
     },
     {
         location: "Nassau, Nova Providência, Bahamas",
-        image: Bahamas,
+        image: "Bahamas",
     },
     {
         location: "Paris, France",
-        image: Paris,
+        image: "Paris",
     },
     {
         location: "Rio de Janeiro, Brazil",
-        image: Brazil,
+        image: "Brazil",
     },
     {
         location: "Rome, Italy",
-        image: Rome,
+        image: "Rome",
     },
     {
         location: "San Juan Bautista, California",
-        image: Bautista,
+        image: "Bautista",
     },
     {
         location: "Santorini, Greece",
-        image: Greece,
+        image: "Greece",
     },
     {
         location: "Tangier, Morocco",
-        image: Mexico,
+        image: "Mexico",
     },
     {
         location: "Singapore",
-        image: Singapore,
+        image: "Singapore",
     },
     {
         location: "Tokyo, Japan",
-        image: Tokyo,
+        image: "Tokyo",
     },
     {
         location: "Venice, Italy",
-        image: Venice,
+        image: "Venice",
     },
     {
         location: "Wicklow, Ireland",
-        image: Wicklow,
+        image: "Wicklow",
     },
     {
         location: "Zakopane, Poland",
-        image: Poland,
+        image: "Poland",
     },
 ];
 
