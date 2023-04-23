@@ -27,7 +27,7 @@ export default function Navbar() {
         <div className='z-20'>         
           <Slide down cascade duration={400}>         
             <ul className='flex flex-col justify-end items-start p-6 text-dark-shade'>     
-              <li className='p-4 font-semibold hover:text-accent-color'><Link to='/home'>Home</Link></li>
+              <li className='p-4 font-semibold hover:text-accent-color'><Link to='/'>Home</Link></li>
               <li className='p-4 font-semibold hover:text-accent-color'><Link to='/about'>About</Link> </li>
               <li className='p-4 font-semibold hover:text-accent-color'><a href="https://docs.google.com/forms/d/e/1FAIpQLScvZkBlv69f74k6q7XJ9szgq_JoZR9Nhug3dsN67I06iQ5Neg/viewform" target="_blank" rel="noopener noreferrer">Start a New Trip</a></li>
               <li className='p-4 font-semibold hover:text-accent-color'><Link to='/contact'>Contact Us</Link></li>              
