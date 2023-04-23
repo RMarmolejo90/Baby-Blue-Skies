@@ -24,28 +24,8 @@ try{
     console.error(error);
 }
 
-// // Set the MIME type header for the JavaScript file
-// app.use('/static', express.static(path.join(__dirname, '/front-end'), {
-//     setHeaders: function (res, path) {
-//       if (path.endsWith('.jsx')) {
-//         res.setHeader('Content-Type', 'text/javascript');
-//       }
-//     }
-//   }));
-
-// const path = require('path');
-
-// // Serve static files from the React build directory
-// app.use(express.static(path.join(__dirname, '..', 'front-end', 'dist')));
-
-// // Serve the index.html file for any other requests
-// app.get('*', (req, res) => {
-//   res.sendFile(path.join(__dirname, '..', 'front-end', 'dist', 'index.html'));
-// });
-
-
 // Create email (write to database)
-app.post('/', emailController.subscribe );
+app.post('/email', emailController.subscribe );
 
 // Delete (unsubscribe)
 app.delete('/unsubscribe', emailController.unsubscribe);
