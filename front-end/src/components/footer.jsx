@@ -13,7 +13,7 @@ export default function Footer() {
         <div className='flex flex-row font-light text-sm flex-wrap justify-center items-between text-secondary-light text-center'>
           <ul className='flex lg:flex-col items-start justify-around lg:p-10 py-6'>
             <li className='p-2'><Link className='m-2 hover:text-secondary-dark hover:border-b hover:border-secondary-dark' onClick={scrollToTop} to='/about'>About</Link> </li>
-            <li className='p-2'><Link className='m-2 hover:text-secondary-dark hover:border-b hover:border-secondary-dark' onClick={scrollToTop} to='/'>Home</Link></li>
+            <li className='p-2'><Link className='m-2 hover:text-secondary-dark hover:border-b hover:border-secondary-dark' onClick={scrollToTop} to='/home'>Home</Link></li>
             <li className='p-2'><Link className='m-2 hover:text-secondary-dark hover:border-b hover:border-secondary-dark' onClick={scrollToTop} to='/contact'>Contact Us</Link></li>              
           </ul>
           <ul className='flex lg:flex-col items-start justify-around lg:p-10 py-6'>

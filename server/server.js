@@ -25,7 +25,7 @@ try{
 }
 
 // Create email (write to database)
-app.post('/email', emailController.subscribe );
+app.post('/home', emailController.subscribe );
 
 // Delete (unsubscribe)
 app.delete('/unsubscribe', emailController.unsubscribe);
