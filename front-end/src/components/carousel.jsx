@@ -15,7 +15,7 @@ export default () => {
 
 
   return (
-    <div className='py-20 bg-primary-light'>
+    <div className='py-20 bg-white-shade'>
       <Fade duration={1000}>
         <Swiper
           // install Swiper modules
