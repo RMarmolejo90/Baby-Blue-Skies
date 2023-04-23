@@ -15,7 +15,7 @@ const Subscribe = loadable(() => import('./pages/subscribe'));
 
 const router = createBrowserRouter([
   {
-    index: true;
+    index: true,
     path: '/home',
     element: <App />,
     errorElement: <Error />,
