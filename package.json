@@ -2,7 +2,8 @@
   "name": "baby-blue-skies",
   "version": "18.12.1",
   "engines": {
-    "node": "18.12.1"
+    "node": "18.12.1",
+    "npm": "8.19.2"
   },
   "description": "",
   "main": "/server/server.js",
