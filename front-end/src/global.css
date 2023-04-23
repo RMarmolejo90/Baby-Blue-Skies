@@ -11,7 +11,7 @@
     --secondary-light: #f7f5f1;
     --accent-color: #EF7F2E;
     --dark-shade: #37515d ;
-    --light-shade: #92acc3;
+    --black-shade: rgb(24, 24, 26);
     --white-shade: #ebebf7;
     --button-color: #3EEF2E;
     --logo: 'sans-serif';
@@ -31,3 +31,10 @@
     height: 100%;
     overflow-x: hidden;
 }
+
+.gradient-logo{
+    background: linear-gradient(186deg, #021bd4, #33adff, #2a4df8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    }

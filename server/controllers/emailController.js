@@ -7,16 +7,17 @@ app.use(bodyParser.json());
 // Subscribe (Create email)
 
 const subscribe = async (req, res) => {
-    const { userEmail } = req.body;
-    console.log('Incoming data:', req.body);
+    console.info(req);
+    const { email } = req;
+    console.log('Incoming data:', req);
     try {
-        const duplicateEmail = await email.findOne({ email: userEmail });
+        const duplicateEmail = await email.findOne({ email: email });
         if (duplicateEmail) {
             return res.status(409).json({message:'This email is already subscribed'})
         } else {
-        const newEmail = new email({ email: userEmail });
+        const newEmail = new email({ email: email });
         await newEmail.save();
-        res.json({message: `Thank you for subscribing! ${userEmail} has been added to our email list`})}
+        res.json({message: `Thank you for subscribing! ${email} has been added to our email list`})}
     } catch (error) {
         console.error(error);
         res.status(500).send('Internal server error');

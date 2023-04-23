@@ -9,7 +9,7 @@
   "scripts": {
     "clean": "del /s /q dist",
     "dev": "vite",
-    "build": "vite build",
+    "build": "cross-env GENERATE_SOURCEMAP=false vite build",
     "preview": "vite preview"
   },
   "dependencies": {

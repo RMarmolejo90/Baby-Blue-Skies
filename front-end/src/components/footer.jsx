@@ -6,9 +6,10 @@ export default function Footer() {
     window.scrollTo(0, 0)
 }
   return (
-    <div className='bg-dark-shade py-16' >
-        <div className='flex items-center justify-center text-primary-light'>
-          <h4 className='p-12 text-2xl font-extralight text-center'>BABY BLUE SKIES TRAVEL AGENCY</h4>
+    <div className='bg-black-shade py-16' >
+        <div className='flex flex-col items-center justify-center text-primary-light p-12'>
+          <h4 className=' text-2xl font-semibold gradient-logo tracking-widest'>BABY BLUE SKIES</h4>
+          <h1 className='leading-6 text-white-shade text-sm font-thin font-logo tracking-wide'>ONLINE TRAVEL AGENCY</h1>
         </div>
         <div className='flex flex-row font-light text-sm flex-wrap justify-center items-between text-secondary-light text-center'>
           <ul className='flex lg:flex-col items-start justify-around lg:p-10 py-6'>

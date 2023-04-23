@@ -30,12 +30,12 @@ export default () => {
           slidesPerView={1}
           navigation   
           onSlideChange={() => console.log('slide change')}
-          className="lg:max-w-xl shadow-2xl contrast-125 rounded-xl"
+          className=" max-w-md lg:max-w-lg shadow-2xl contrast-125 rounded-xl"
         >
           {sliders.map( (sliders, index) => (
             <SwiperSlide key={index} className='slide'  >
               <div className='slide-wrapper'>
-              <img className='swiper-image lg:min-h-max' loading="lazy" src={sliders.image} alt={sliders.location} />
+              <img className='swiper-image ' loading="lazy" src={sliders.image} alt={sliders.location} />
                 <div className="swiper-lazy-preloader"></div>
                 <div className=' relative text-white-shade font-bold p-4 text-2xl text-center bg-dark-shade'>
                   <h2 >{sliders.location}</h2>

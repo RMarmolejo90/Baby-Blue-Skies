@@ -13,18 +13,20 @@ const EmailForm = () => {
     validationSchema: Yup.object({
       email: Yup.string().email('Invalid email address').required('Required'),
     }), 
-    onSubmit: async (values) => {
+    onSubmit: async (email) => {
       console.log('Sending POST request');
-      await axios.post('/', { userEmail: values }, {
+      console.log(email);
+      const req = await axios.post('/post', { email: email }, {
         headers: {
           'Content-Type': 'application/json',
-        },
+        }, 
       }) .then (function (response) {
         alert('Thank you for subscribing!')
         console.log(response);
         formik.resetForm();
       }) .catch (function (error) {
-        console.log (error)
+        console.info(req);
+        console.log (error);
         if (error.response.status === 409){ alert('This email is already subscribed')}
       });
     }
@@ -46,7 +48,8 @@ const EmailForm = () => {
         
         <div className='border border-white-shade rounded-lg p-8 mb-8 shadow-inner-xl shadow-md bg-primary-light'>
           <form onSubmit={formik.handleSubmit} className='p-4 flex flex-col items-center justify-center'>
-            <label className='pb-6 font-semibold text-lg accent-accent-color' htmlFor="email">Sign Up For Travel Deals</label> 
+            <h3 className='font-semibold text-lg text-dark-shade p-4'>Coming Soon!</h3>
+            <label className='pb-6 font-bold text-xl gradient-logo' htmlFor="email">Sign Up For Travel Deals</label> 
             <input
               className='border-2 rounded-lg px-4 m-4 tracking-side leading-6 text-center accent-accent-color'
               id="email"
@@ -57,7 +60,7 @@ const EmailForm = () => {
               onBlur={formik.handleBlur}
               value={formik.values.email}
             />
-            <button className='py-2 px-10 mt-8 m-4 tracking-side leading-6 text-sm bg-button-color font-semibold border rounded-sm' type="submit">Submit</button>
+            <button className='p-2 px-10 m-4 leading-6 tracking-wider text-sm bg-button-color shadow-inner font-semibold border rounded-md hover:border-dark-shade hover:shadow-lg' type="submit">Submit</button>
           </form>
         </div>
       </Slide>
