@@ -7,7 +7,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/autoplay';
 import 'swiper/css/effect-cube';
 import { Fade } from 'react-awesome-reveal';
-import sliders from './sliderObjects';
+import sliders from '../assets/sliderObjects';
 
 //content
 
