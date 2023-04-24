@@ -60,7 +60,7 @@ const EmailForm = () => {
               onBlur={formik.handleBlur}
               value={formik.values.email}
             />
-            <button className='p-2 px-10 m-4 leading-6 tracking-wider text-sm bg-button-color shadow-inner font-semibold border rounded-md hover:border-dark-shade hover:shadow-lg' type="submit">Submit</button>
+            <button className='p-2 px-10 m-4 leading-6 tracking-wider text-sm bg-button-color text-black-shade shadow-inner font-semibold border rounded-md hover:border-dark-shade hover:shadow-xl' type="submit">Submit</button>
           </form>
         </div>
       </Slide>

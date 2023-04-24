@@ -11,7 +11,7 @@ export default function Cta() {
           Let us help you plan your next big adventure! Our expert travel agents will guide you every step of the way and make sure your trip is unforgettable. 
           Don't let your wanderlust go to waste - contact us today and let's start planning your dream escape!
         </h4>
-        <a className='p-2 px-10 m-4 leading-6 tracking-wider text-sm bg-button-color font-semibold border rounded-md hover:border-dark-shade hover:shadow-lg' href="https://docs.google.com/forms/d/e/1FAIpQLScvZkBlv69f74k6q7XJ9szgq_JoZR9Nhug3dsN67I06iQ5Neg/viewform">
+        <a className='text-black-shade p-2 px-10 m-4 leading-6 tracking-wider text-sm bg-button-color font-semibold border rounded-md hover:border-dark-shade hover:shadow-xl' href="https://docs.google.com/forms/d/e/1FAIpQLScvZkBlv69f74k6q7XJ9szgq_JoZR9Nhug3dsN67I06iQ5Neg/viewform">
             Start A New Trip
         </a>
       </Fade>
