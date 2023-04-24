@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <div>
         <div className='pb-20 p-10 flex flex-col flex-wrap items-center justify-center min-h-[70vh] bg-[url(../src/assets/images/beach-landscape.jpg)] bg-cover bg-no-repeat'>
-            <div className='shadow-xl mb-28 text-center p-6 pb-10 flex flex-col flex-wrap items-center justify-center mt-10 rounded-xl border backdrop-brightness-150 backdrop-blur-sm backdrop-saturate-[.35]'> 
+            <div className='shadow-2xl mb-28 text-center p-6 pb-10 flex flex-col flex-wrap items-center justify-center mt-10 rounded-xl border backdrop-brightness-150 backdrop-blur-sm backdrop-saturate-[.35]'> 
                 <Fade delay={200} duration={3000}>
                     <h2 className='pb-8 m-4 text-3xl font-extrabold'>
                         Let's Start Planning Your Dream Vacation!
