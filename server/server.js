@@ -55,7 +55,7 @@ app.get('/', (req, res) => {
   })
 
 try {
-    app.listen(process.env.PORT);
+    app.listen(process.env.PORT || 3000);
 
 } catch(error) {
     console.error(error);

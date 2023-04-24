@@ -9,7 +9,6 @@
   "main": "/server/server.js",
   "scripts": {
     "clean": "del /s /q dist",
-    "build": "node server/server.js",
     "dev": "nodemon server/server.js",
     "start": "node server/server.js"
   },
