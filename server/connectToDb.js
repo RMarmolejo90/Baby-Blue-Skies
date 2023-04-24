@@ -15,7 +15,7 @@ async function connectToDB(){
         console.log("connected to database");
     } catch(err) {
         console.log(err);
-    }npm 
+    }
 }
 
 module.exports = connectToDB;
