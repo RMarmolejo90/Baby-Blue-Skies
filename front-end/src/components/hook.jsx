@@ -4,7 +4,7 @@ import frustratedImage from '../assets/images/frustrated.jpg';
 
 export default function Hook() {
   return (
-    <div className='bg-primary-light py-32 lg:p-20 flex flex-col lg:flex-row flex-wrap items-center justify-center'>
+    <div className='bg-white-shade py-32 lg:p-20 flex flex-col lg:flex-row flex-wrap items-center justify-center'>
         <Slide duration={300}>
             <div className='lg:max-w-lg ' >    
                 <img className='max-w-[100vw] xl:max-w-md lg:pr-6 lg:max-w-sm' src={frustratedImage} alt="frustrated man sitting on a beach" />
