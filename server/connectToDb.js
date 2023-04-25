@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 // load env variables
 if (process.env.NODE_ENV != "production"){
-    require("dotenv").config({path: '/'});
+    require('dotenv').config({ path: '../config/.env' });
 }
 
 // Connect to DB

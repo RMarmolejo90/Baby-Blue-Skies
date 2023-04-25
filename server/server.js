@@ -13,7 +13,7 @@ app.use(cors({
 }));
 // load env variables
 if (process.env.NODE_ENV != "production"){
-    require("dotenv").config();
+    require('dotenv').config({ path: '../config/.env' });
 }
 
 // Connect to database
