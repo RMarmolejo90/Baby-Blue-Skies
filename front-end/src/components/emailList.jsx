@@ -15,7 +15,6 @@ const EmailForm = () => {
     }), 
     onSubmit: async (email) => {
       console.log('Sending POST request');
-      console.log(email);
       const req = await axios.post('/post', { email: email }, {
         headers: {
           'Content-Type': 'application/json',
@@ -25,7 +24,6 @@ const EmailForm = () => {
         console.log(response);
         formik.resetForm();
       }) .catch (function (error) {
-        console.info(req);
         console.log (error);
         if (error.response.status === 409){ alert('This email is already subscribed')}
       });
