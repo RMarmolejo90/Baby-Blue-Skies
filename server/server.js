@@ -23,6 +23,15 @@ try{
     console.error(error);
 }
 
+// Set up rate limiter: maximum of twenty requests per minute
+const RateLimit = require("express-rate-limit");
+const limiter = RateLimit({
+  windowMs: 1 * 60 * 1000, // 1 minute
+  max: 10,
+});
+// Apply rate limiter to all requests
+app.use(limiter);
+
 // Create email (write to database)
 app.post('/post', emailController.subscribe );
 
@@ -46,16 +55,18 @@ app.use((error, req, res, next) => {
     });
 });
 
+
+
 // Start Server
 app.get('/', (req, res) => {
     const PORT = process.env.PORT;
     res.send(`server on port ${PORT}`);
     console.log(req.url);
-    console.log(res.PORT);
+    req.getHeaders();
+    console.log(PORT);
   })
-
 try {
-    app.listen(process.env.PORT || 3000);
+    app.listen(process.env.PORT);
 
 } catch(error) {
     console.error(error);

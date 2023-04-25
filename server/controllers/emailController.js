@@ -7,9 +7,8 @@ app.use(bodyParser.json());
 // Subscribe (Create email)
 
 const subscribe = async (req, res) => {
-    console.info(req);
+    res.getHeaders();
     const { email } = req;
-    console.log('Incoming data:', req);
     try {
         const duplicateEmail = await email.findOne({ email: email });
         if (duplicateEmail) {
