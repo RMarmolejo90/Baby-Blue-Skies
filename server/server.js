@@ -38,6 +38,15 @@ app.post('/post', emailController.subscribe );
 // Delete (unsubscribe)
 app.delete('/unsubscribe', emailController.unsubscribe);
 
+// Get root request
+app.get('/', (req, res) => {
+    const PORT = process.env.PORT;
+    res.send(`server on port ${PORT}`);
+    console.log(req.url);
+    req.getHeaders();
+    console.log(PORT);
+  })
+
 // Catch 404 errors
 app.use((req, res, next) => {
     const error = new Error('Not found');
@@ -58,13 +67,6 @@ app.use((error, req, res, next) => {
 
 
 // Start Server
-app.get('/about', (req, res) => {
-    const PORT = process.env.PORT;
-    res.send(`server on port ${PORT}`);
-    console.log(req.url);
-    req.getHeaders();
-    console.log(PORT);
-  })
 try {
     app.listen(process.env.PORT);
 
