@@ -27,7 +27,7 @@ try{
 const RateLimit = require("express-rate-limit");
 const limiter = RateLimit({
   windowMs: 1 * 60 * 1000, // 1 minute
-  max: 10,
+  max: 15,
 });
 // Apply rate limiter to all requests
 app.use(limiter);
@@ -40,7 +40,7 @@ app.delete('/unsubscribe', emailController.unsubscribe);
 
 // Catch 404 errors
 app.use((req, res, next) => {
-    const error = new Error(`${JSON.stringify(req)} Not found`);
+    const error = new Error('Not found');
     error.status = 404;
     next(error);
 });
@@ -58,7 +58,7 @@ app.use((error, req, res, next) => {
 
 
 // Start Server
-app.get('/', (req, res) => {
+app.get('/about', (req, res) => {
     const PORT = process.env.PORT;
     res.send(`server on port ${PORT}`);
     console.log(req.url);
