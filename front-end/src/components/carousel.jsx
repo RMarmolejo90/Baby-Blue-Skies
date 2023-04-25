@@ -29,12 +29,12 @@ export default () => {
           slidesPerView={1}
           navigation   
           onSlideChange={() => console.log('slide change')}
-          className=" max-h-sm lg:max-w-md shadow-2xl contrast-125 rounded-xl"
+          className=" max-w-sm lg:max-w-md shadow-2xl contrast-125 rounded-xl"
         >
           {sliders.map( (sliders, index) => (
             <SwiperSlide key={index} className='slide'  >
               <div className='slide-wrapper'>
-              <img className='swiper-image ' loading="lazy" src={sliders.image} alt={sliders.location} />
+              <img className='swiper-image overflow-hidden saturate-[110] brightness-105 contrast-125 ' loading="lazy" src={sliders.image} alt={sliders.location} />
                 <div className="swiper-lazy-preloader"></div>
                 <div className='text-white-shade max-h-sm lg:max-w-md font-bold p-4 text-2xl text-center bg-dark-shade'>
                   <h2 >{sliders.location}</h2>
