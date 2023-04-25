@@ -40,7 +40,7 @@ app.delete('/unsubscribe', emailController.unsubscribe);
 
 // Catch 404 errors
 app.use((req, res, next) => {
-    const error = new Error(`${req} Not found`);
+    const error = new Error(`${JSON.stringify(req)} Not found`);
     error.status = 404;
     next(error);
 });
