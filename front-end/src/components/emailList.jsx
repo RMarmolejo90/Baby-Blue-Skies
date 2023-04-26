@@ -15,8 +15,8 @@ const EmailForm = () => {
     }), 
     onSubmit: async (email) => {
       console.log('Sending POST request');
-      await axios.post('/post', email , {
-        headers: {
+      await axios.post('/post', formik.values.email, {
+         headers: {
           'Content-Type': 'application/json'
         }, 
       }) .then (function (response) {
