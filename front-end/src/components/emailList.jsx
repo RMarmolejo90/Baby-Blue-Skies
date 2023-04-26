@@ -13,7 +13,7 @@ const EmailForm = () => {
       email: Yup.string().email('Invalid email address').required('Required'),
     }), 
     onSubmit: async (email) => {
-      await axios.post('/post', {email: email}, {
+      await axios.post('/post', {email:email}, {
         headers: {
           'Content-Type': 'application/json'
         }, 
@@ -22,7 +22,6 @@ const EmailForm = () => {
         console.log(response);
         formik.resetForm();
       }) .catch (function (error) {
-        console.info(error);
         console.log (error);
         if (error.response.status === 409){ alert('This email is already subscribed')}
       });
