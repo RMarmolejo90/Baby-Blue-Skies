@@ -1,10 +1,10 @@
 import React from 'react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
-import axios from 'axios';
 import { Slide } from 'react-awesome-reveal';
-const axios = require('axios');
 
+const axios = require('axios');
+s
 
 const EmailForm = () => {
   const formik = useFormik({
