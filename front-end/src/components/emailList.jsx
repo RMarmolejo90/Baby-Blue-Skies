@@ -3,6 +3,7 @@ import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import axios from 'axios';
 import { Slide } from 'react-awesome-reveal';
+const axios = require('axios');
 
 
 const EmailForm = () => {
@@ -13,9 +14,9 @@ const EmailForm = () => {
     validationSchema: Yup.object({
       email: Yup.string().email('Invalid email address').required('Required'),
     }), 
-    onSubmit: async (email) => {
+    onSubmit: async () => {
       console.log('Sending POST request');
-      await axios.post('/post', formik.values.email, {
+      const {data} = await axios.post('/post', formik.values.email, {
          headers: {
           'Content-Type': 'application/json'
         }, 
