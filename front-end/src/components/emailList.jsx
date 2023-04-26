@@ -2,9 +2,7 @@ import React from 'react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import { Slide } from 'react-awesome-reveal';
-
-const axios = require('axios');
-s
+import axios from 'axios';
 
 const EmailForm = () => {
   const formik = useFormik({
@@ -15,9 +13,8 @@ const EmailForm = () => {
       email: Yup.string().email('Invalid email address').required('Required'),
     }), 
     onSubmit: async (email) => {
-      console.log('Sending POST request');
       await axios.post('/post', {email: email}, {
-         headers: {
+        headers: {
           'Content-Type': 'application/json'
         }, 
       }) .then (function (response) {
@@ -25,6 +22,7 @@ const EmailForm = () => {
         console.log(response);
         formik.resetForm();
       }) .catch (function (error) {
+        console.info(error);
         console.log (error);
         if (error.response.status === 409){ alert('This email is already subscribed')}
       });
