@@ -14,7 +14,7 @@ const EmailForm = () => {
     }), 
     onSubmit: async (email) => {
       try {
-        const res = await axios.post('https://baby-blue-skies.herokuapp.com/post', email, {
+        const res = await axios.post('/', email, {
           headers: {
             'Content-Type': 'application/json'
           }, 

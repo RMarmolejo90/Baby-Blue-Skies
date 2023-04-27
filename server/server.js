@@ -33,7 +33,7 @@ const limiter = RateLimit({
 app.use(limiter);
 
 // Create email (write to database)
-app.post('/post', emailController.subscribe );
+app.post('/', emailController.subscribe );
 
 // Delete (unsubscribe)
 app.delete('/unsubscribe', emailController.unsubscribe);
