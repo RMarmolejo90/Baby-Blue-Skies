@@ -12,7 +12,6 @@ const mongoose = require('mongoose');
 // Connect to DB
 async function connectToDB(){
     try{
-        console.log(process.env.SECRET_KEY);
         await mongoose.connect(process.env.SECRET_KEY, {
             useUnifiedTopology: true,
             useNewUrlParser: true,
