@@ -15,7 +15,7 @@ const subscribe = async (req, res) => {
         if (duplicateEmail) {
             return res.status(409).json({message:'This email is already subscribed'})
         } else {
-        const newEmail = new email( sub );
+        const newEmail = new emailAddress( sub );
         await newEmail.save();
         res.json({message: `Thank you for subscribing! ${sub} has been added to our email list`})}
     } catch (error) {
