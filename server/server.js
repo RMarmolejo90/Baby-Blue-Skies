@@ -27,7 +27,7 @@ try{
 const RateLimit = require("express-rate-limit");
 const limiter = RateLimit({
   windowMs: 1 * 60 * 1000, // 1 minute
-  max: 15,
+  max: 25,
 });
 // Apply rate limiter to all requests
 app.use(limiter);
@@ -38,12 +38,17 @@ app.post('/post', emailController.subscribe );
 // Delete (unsubscribe)
 app.delete('/unsubscribe', emailController.unsubscribe);
 
-// Get root request
+// GET Root Request
 app.get('/', (req, res) => {
-    const PORT = process.env.PORT;
-    res.send(`server on port ${PORT}`);
-})
-
+    try {
+      const PORT = process.env.PORT;
+      res.send(`server on port ${PORT}`);
+    } catch (error) {
+      console.error(error);
+      res.status(500).send('Internal Server Error');
+    }
+  });
+  
 // Catch 404 errors
 app.use((req, res, next) => {
     const error = new Error('Not found');
