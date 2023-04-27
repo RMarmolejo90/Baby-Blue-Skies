@@ -3,9 +3,7 @@ const { Schema } = mongoose;
 
 // Create Schema for emails
 const emailSchema = new Schema({
-   email: {
-      type: String,      
-  }
+   email: String
 });
 
 const email = mongoose.model('email', emailSchema);

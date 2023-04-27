@@ -9,15 +9,15 @@ const app = express();
 
 const subscribe = async (req, res) => {
     res.getHeaders();
-    const { email } = req;
+    const { sub } = res.data;
     try {
-        const duplicateEmail = await email.findOne({ email: email });
+        const duplicateEmail = await email.findOne({ email: sub });
         if (duplicateEmail) {
             return res.status(409).json({message:'This email is already subscribed'})
         } else {
-        const newEmail = new email({ email });
+        const newEmail = new email( sub );
         await newEmail.save();
-        res.json({message: `Thank you for subscribing! ${email} has been added to our email list`})}
+        res.json({message: `Thank you for subscribing! ${sub} has been added to our email list`})}
     } catch (error) {
         console.error(error);
         res.status(500).send('Internal server error');
