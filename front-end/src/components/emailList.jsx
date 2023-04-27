@@ -7,9 +7,7 @@ import axios from 'axios';
 const EmailForm = () => {
 
   //debugging the disconnect error
-  import React, { useEffect } from 'react';
 
-function MyApp() {
 
   useEffect(() => {
 // communicate with the React DevTools
