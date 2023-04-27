@@ -39,7 +39,7 @@ app.post('/post', emailController.subscribe );
 app.delete('/unsubscribe', emailController.unsubscribe);
 
 // Get root request
-app.get('https://api.babyblueskiestravel.com/', (req, res) => {
+app.get('https://baby-blue-skies.herokuapp.com', (req, res) => {
     const PORT = process.env.PORT;
     res.send(`server on port ${PORT}`);
     console.log(req.url);
