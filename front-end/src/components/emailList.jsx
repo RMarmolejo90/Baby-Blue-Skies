@@ -13,7 +13,7 @@ const EmailForm = () => {
       email: Yup.string().email('Invalid email address').required('Required'),
     }), 
     onSubmit: async (email) => {
-      await axios.post('/post', {email:email}, {
+      await axios.post('/post', email, {
         headers: {
           'Content-Type': 'application/json'
         }, 

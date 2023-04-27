@@ -1,12 +1,12 @@
-const { json } = require('express');
 const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
 // Create Schema for emails
 const emailSchema = new Schema({
-    email: {
+    Subscriber: {
       type: JSON,
       unique: true,
+      
   }
 });
 
