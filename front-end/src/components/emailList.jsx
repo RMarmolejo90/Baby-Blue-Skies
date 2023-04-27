@@ -13,19 +13,23 @@ const EmailForm = () => {
       email: Yup.string().email('Invalid email address').required('Required'),
     }), 
     onSubmit: async (email) => {
-      const res =  await axios.post('/post', email, {
-        headers: {
-          'Content-Type': 'application/json'
-        }, 
-      }) .then (function (response) {
-        alert('Thank you for subscribing!')
-        console.log(response);
+      try {
+        const res = await axios.post('https://baby-blue-skies.herokuapp.com/post', email, {
+          headers: {
+            'Content-Type': 'application/json'
+          }, 
+        });
+        alert('Thank you for subscribing!');
+        console.log(res);
         formik.resetForm();
-      }) .catch (function (error) {
-        console.log (error);
-        if (error.response.status === 409){ alert('This email is already subscribed')}
-      });
+      } catch (error) {
+        console.log(error);
+        if (error.response.status === 409) {
+          alert('This email is already subscribed');
+        }
+      }
     }
+    
     
   });
 

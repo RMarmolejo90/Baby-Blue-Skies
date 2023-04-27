@@ -39,13 +39,10 @@ app.post('/post', emailController.subscribe );
 app.delete('/unsubscribe', emailController.unsubscribe);
 
 // Get root request
-app.get('https://baby-blue-skies.herokuapp.com', (req, res) => {
+app.get('/', (req, res) => {
     const PORT = process.env.PORT;
     res.send(`server on port ${PORT}`);
-    console.log(req.url);
-    req.getHeaders();
-    console.log(PORT);
-  })
+})
 
 // Catch 404 errors
 app.use((req, res, next) => {
