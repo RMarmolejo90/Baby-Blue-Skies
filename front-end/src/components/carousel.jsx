@@ -22,7 +22,7 @@ export default () => {
           modules={[Navigation, EffectCube, Autoplay]}
           enabled='true'
           autoplay={true}
-          autoheight='true'
+          autoheight={true}
           effect='cube'
           loop='true'
           lazyPreloadPrevNext={2}
@@ -35,7 +35,7 @@ export default () => {
           {sliders.map( (sliders, index) => (
             <SwiperSlide key={index} className='slide'  >
               <div className='slide-wrapper'>
-              <img className='swiper-image min-h-full min-w-full overflow-hidden' loading="lazy" src={sliders.image} alt={sliders.location} />
+              <img className='swiper-image min-w-full overflow-hidden' loading="lazy" src={sliders.image} alt={sliders.location} />
                 <div className="swiper-lazy-preloader"></div>
                 <div className='text-white-shade min-w-full lg:max-w-md font-bold p-4 text-2xl text-center bg-dark-shade'>
                   <h2 >{sliders.location}</h2>
