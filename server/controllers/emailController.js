@@ -9,7 +9,7 @@ app.use(express.json());
 
 const subscribe = async (req, res) => {
     try {
-        const { email } = res.body;
+        const email  = res.body;
         const duplicateEmail = await email.findOne({ email });
         if (duplicateEmail) {
             return res.status(409).json({message:'This email is already subscribed'})
