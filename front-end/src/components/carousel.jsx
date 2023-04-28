@@ -22,7 +22,7 @@ export default () => {
           modules={[Navigation, EffectCube, Autoplay]}
           enabled='true'
           autoplay={true}
-          autoheight={true}
+          autoheight='true'
           effect='cube'
           loop='true'
           lazyPreloadPrevNext={2}
@@ -30,7 +30,7 @@ export default () => {
           slidesPerView={1}
           navigation   
           onSlideChange={() => console.log('slide change')}
-          className=" max-w-xs lg:max-w-md"
+          className="lg:max-w-md"
         >
           {sliders.map( (sliders, index) => (
             <SwiperSlide key={index} className='slide'  >
