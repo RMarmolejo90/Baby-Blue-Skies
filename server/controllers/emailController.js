@@ -1,22 +1,22 @@
-const email = require('../models/emails');
+const emailAddress = require('../models/emails');
 //const bodyParser = require('body-parser');
 const express = require('express');
 const app = express();
 
-//app.use(bodyParser.json());
+app.use(express.json());
 
 // Subscribe (Create email)
 
 const subscribe = async (req, res) => {
     try {
-        const { email } = res.data;
-        // const duplicateEmail = await email.findOne({ email });
-        // if (duplicateEmail) {
-        //     return res.status(409).json({message:'This email is already subscribed'})
-        // } else {
+        const { email } = res.body;
+        const duplicateEmail = await email.findOne({ email });
+        if (duplicateEmail) {
+            return res.status(409).json({message:'This email is already subscribed'})
+        } else {
         const newEmail = new emailAddress( email );
         await newEmail.save();
-        res.json({message: `Thank you for subscribing! ${sub} has been added to our email list`})
+        res.json({message: `Thank you for subscribing! ${sub} has been added to our email list`})}
     } 
     catch (error) {
         console.error(error);
