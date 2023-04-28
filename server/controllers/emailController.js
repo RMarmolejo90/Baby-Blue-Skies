@@ -9,13 +9,13 @@ const app = express();
 
 const subscribe = async (req, res) => {
     res.getHeaders();
-    const { sub } = res.data;
+    const { email } = res.data;
     try {
-        const duplicateEmail = await email.findOne({ email: sub });
+        const duplicateEmail = await email.findOne({ email });
         if (duplicateEmail) {
             return res.status(409).json({message:'This email is already subscribed'})
         } else {
-        const newEmail = new emailAddress( sub );
+        const newEmail = new emailAddress( email );
         await newEmail.save();
         res.json({message: `Thank you for subscribing! ${sub} has been added to our email list`})}
     } catch (error) {

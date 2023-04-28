@@ -41,7 +41,7 @@ const EmailForm = () => {
     }), 
     onSubmit: async (email) => {
       try {
-        const res = await axios.post('/', email)
+        const res = await axios.post('/', {email: email})
         alert('Thank you for subscribing!');
         console.log(res);
         formik.resetForm();

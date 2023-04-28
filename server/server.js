@@ -73,5 +73,5 @@ try {
     app.listen(process.env.PORT);
 
 } catch(error) {
-    console.error(error);
+    console.info(error);
 }
