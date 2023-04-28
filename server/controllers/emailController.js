@@ -8,21 +8,21 @@ const app = express();
 // Subscribe (Create email)
 
 const subscribe = async (req, res) => {
-    res.getHeaders();
-    const { email } = res.data;
     try {
-        const duplicateEmail = await email.findOne({ email });
-        if (duplicateEmail) {
-            return res.status(409).json({message:'This email is already subscribed'})
-        } else {
+        const { email } = res.data;
+        // const duplicateEmail = await email.findOne({ email });
+        // if (duplicateEmail) {
+        //     return res.status(409).json({message:'This email is already subscribed'})
+        // } else {
         const newEmail = new emailAddress( email );
         await newEmail.save();
-        res.json({message: `Thank you for subscribing! ${sub} has been added to our email list`})}
-    } catch (error) {
+        res.json({message: `Thank you for subscribing! ${sub} has been added to our email list`})
+    } 
+    catch (error) {
         console.error(error);
-        res.status(500).send('Internal server error');
-    }
-};
+        res.status(500).send('Internal server error');}
+    
+}
    
 // Unsubscribe (delete email)
 

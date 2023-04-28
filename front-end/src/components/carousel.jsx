@@ -22,7 +22,7 @@ export default () => {
           modules={[Navigation, EffectCube, Autoplay]}
           enabled='true'
           autoplay={true}
-          autoheight
+          autoheight='true'
           effect='cube'
           loop='true'
           lazyPreloadPrevNext={2}
