@@ -29,7 +29,6 @@ export default () => {
           spaceBetween={50}
           slidesPerView={1}
           navigation   
-          onSlideChange={() => console.log('slide change')}
           className="lg:max-w-md"
         >
           {sliders.map( (sliders, index) => (

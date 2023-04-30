@@ -7,30 +7,6 @@ import axios from 'axios';
 
 const EmailForm = () => {
 
-  //debugging the disconnect error
-
-
-  useEffect(() => {
-// communicate with the React DevTools
-    window.postMessage({
-      source: 'react-devtools-extension',
-      hello: true
-    }, '*');
-
-    window.addEventListener('message', handleMessageFromDevtools);
-
-    return () => {
-      window.removeEventListener('message', handleMessageFromDevtools);
-    };
-  }, []);
-
-  function handleMessageFromDevtools(event) {
-    if (event.source === window && event.data && event.data.source === 'react-devtools-content-script') {
-      console.log('Received message from React DevTools:', event.data);
-    }
-  }
-
-  //End Debug Tool
 
   const formik = useFormik({
     initialValues: {
